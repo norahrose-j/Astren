@@ -47,14 +47,27 @@ a {
     width: 100%;
     top: 0;
     z-index: 100;
-    background-image: url(../images/asharia/ashariabar.jpg);
-    background-size: cover;
     height: 8vh;
 
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
     font-family: 'TextBold';
+}
+
+#ashariabar {
+    background-image: url(../images/asharia/ashariabar.jpg);
+    background-size: cover;
+}
+
+#arkmorebar {
+    background-image: url(../images/arkmore/arkmorehead.jpg);
+    background-size: cover;
+}
+
+#kinemorebar {
+    background-image: url(../images/kinemore/kinemorehead.png);
+    background-size: cover;
 }
 
 .menu-btn {
@@ -318,7 +331,6 @@ h3 {
 }
 
 .mainmap {
-    width: 27vw;
     transition: all 0.5s ease;
 
     display: block;
@@ -326,7 +338,19 @@ h3 {
     margin-right: auto;
 }
 
-.mainmap:hover {
+#ashariamap {
+    width: 27vw;
+}
+
+#arkmoremap {
+    width: 60vw;
+}
+
+#kinemoremap {
+    width: 45vw;
+}
+
+/* .mainmap:hover {
     opacity: 0.8;
 }
 
@@ -343,24 +367,27 @@ h3 {
     display: none;
 }
 
+.popupcontainer {
+    display: flex;
+}
+
 .popupimage {
     width: 74vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 2.5vh;
 }
 
 .fa-xmark {
     color: #F4F3F3;
     font-size: 30px;
-
     position: fixed;
-    top: 0;
-    margin-left: 97.355vw;
-    margin-top: 1.7vh;
 
     transition: all 0.5s ease;
+}
+
+.xmark {
+    background-color: #cacaca00;
+    border: none;
 }
 
 .fa-xmark:hover {
@@ -370,7 +397,7 @@ h3 {
 
 .fa-xmark:active {
     transform: scale(0.8)
-}
+} */
 
 /* TABLE */
 .text table {

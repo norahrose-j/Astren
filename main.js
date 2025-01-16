@@ -29,15 +29,14 @@ function changeColorClick(element) {
     })
 }
 
-var mapPopUp = document.getElementById('ashariamap');
-mapPopUp.addEventListener('click', function () {
-    const popUpImg = document.getElementById('ashariapopup');
-    popUpImg.style.display = 'block';
-})
+// var mapPopUp = document.getElementById('ashariamap');
+// mapPopUp.addEventListener('click', function () {
+//     const popUpImg = document.getElementById('ashariapopup');
+//     popUpImg.style.display = 'block';
+// })
 
-var closePopUp = document.getElementById('ashariaxmark'); 
-closePopUp.style.fontSize = '75px'
-closePopUp.addEventListener('click', function () {
-    const popUpImg = document.getElementById('ashariapopup');
-    popUpImg.style.display = 'hidden';
-})
+// var closePopUp = document.getElementById('ashariaxmark'); 
+// closePopUp.addEventListener('click', function () {
+//     const popUpImg = document.getElementById('ashariapopup');
+//     popUpImg.style.display = 'hidden';
+// })
