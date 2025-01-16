@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="" href="style.css">
+    <title>Astren</title>
+    <script src="https://kit.fontawesome.com/84c7f98808.js" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+
+        <header class = "header">
+            <div class = "parallax" id = "mainhead"></div>
+            <div class = "content landingtext">
+                <p class = "headtexttop">Welcome To</p>
+                <p class = "headtextbottom">Astren</p>
+                <a href="#body"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </header>
+
+        <main id = "homemain">
+            <a id = "body"></a>
+            <p class = "firstpara">
+            This remote area began in the cold, forbidding lands along 
+            the great ice  sheets and continued south toward the northeastern 
+            shores of the Sea of Fallen Stars, collectively known as the Cold 
+            Lands. It was bordered on the west by the mountain-hemmed land of 
+            Vaasa and stretched east to the vast steppes of the Hordelands.
+            This remote area began in the cold, forbidding lands along 
+            the great ice  sheets and continued south toward the northeastern 
+            shores of the Sea of Fallen Stars, collectively known as the Cold 
+            Lands. It was bordered on the west by the mountain-hemmed land of 
+            Vaasa and stretched east to the vast steppes of the Hordelands.
+            </p>
+            <img class = "mermacorn" src="images/mermacorn.png" alt="">
+        </main>
+
+        <header id = "header">
+            <button id="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+        </header>
+
+    <div id="nav-menu" class="nav-menu">
+        <ul>
+            <li class = "currpage"><a href="#">HOME</a></li>
+            <li class = "page"><a href="regions.html">REGIONS</a></li>
+            <li class = "page"><a href="#">ORGANIZATIONS</a></li>
+            <li class = "page"><a href="#">INHABITANTS</a></li>
+            <li class = "page"><a href="collection/collection.html">COLLECTION</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('open');
+
+            const menuButton = document.getElementById('menu-btn');
+            menuButton.classList.toggle('active');
+
+            console.log(menuButton.classList);
+        }
+    </script>
+
+        <script src="main.js"></script> 
+    </body>
+</html>

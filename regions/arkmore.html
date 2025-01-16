@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="" href="style.css">
+    <title>Astren</title>
+    <script src="https://kit.fontawesome.com/84c7f98808.js" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+
+       <!-- <header class = "subhead">
+            <div class = "parallax" id = "kinemorehead"></div>
+            <div class = "content">
+                <p class = "subheadtext">Kinemore</p>
+            </div>
+        </header> -->
+
+        <header class = "subheader">
+            <div class = "subparallax" id = "submainheadakmore"></div>
+            <div class = "subcontent">
+                <p class = "subheadtext">Arkmore</p>
+            </div>
+        </header>
+
+         <main class = "submain">     
+            <p class = "motto">Unity Conquers All</p>
+            <p class = "firstpara">
+            Arkmore is a temperate, coastal country in the south-west of Astren. 
+            It is the seat of the Astran Empire and renowned for Levalliers' pirate affiliation. 
+            Arkmore is home to the most common races of Arkmore, and while there are no unique 
+            factors that distinguish Arkmorians from any other nationality, the home of the 
+            Empire gives most of its citizens a sense of power.
+            </p>
+            <img class = "mermacorn" src="../images/arkmore/arkmorecrest.png" alt="">
+
+            <a id = "geography"></a>
+            <p class = "title">GEOGRAPHY</p>
+            <p class = "firstpara"></p>
+            <img class = "map" src="../images/arkmore/map.png" alt="">
+
+
+            <p class = "title">NOBILITY</p>
+            <a id = "nobility"></a>
+            <div class = "crests">
+                <div class = "crestcontainer">
+                    <img class = "crest" src="../images/arkmore/blackwood.png" alt="">
+                    <p class = "crestname">BLACKWOOD</p>
+                    <p class = "crestloc">POINNE</p>
+                    <p class = "crestdesc">House Blackwood hold dominon over the landlocked
+                    Northeastern regions of Arkmore. Headed by Lord Corbin Blackwood.</p>
+                </div>
+                
+                <div class = "crestcontainer">
+                    <img class = "crest" src="../images/arkmore/naefaren.png" alt="">
+                    <p class = "crestname">NAEFAREN</p>
+                    <p class = "crestloc">DAMVIK</p>
+                    <p class = "crestdesc">House Naefaren are Arkmore's representatives to the
+                    Empire, and hold Arkmore's set on the Imperial Council. Within the nation, they
+                    preside over the central region of Arkmore. Headed by Lord Vedran Naefaren.</p>
+                </div>
+        
+                <div class = "crestcontainer">
+                    <img class = "crest" src="../images/arkmore/colfort.png" alt="">
+                    <p class = "crestname">COLFORT</p>
+                    <p class = "crestloc">CASTILLON</p>
+                    <p class = "crestdesc">House Colfort preside over the West of Arkmore and its
+                    oversee its considerable coast. Headed by Lady Corinne Castillon.</p>
+                </div>
+            </div>
+        </main>
+
+
+        <header id = "header">
+            <a href="#geography"><p>GEOGRAPHY</p></a>
+            <a href="#nobility"><p>NOBILITY</p></a>
+            <a href="#classes"><p>CLASSES</p></a>
+            <a href="#races"><p>RACES</p></a>
+            <a href="#politics"><p>POLITICS</p></a>
+            <button id="menu-btn" onclick="toggleMenu()">MENU</button>
+        </header>
+
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <li class = "currpage"><a href="../index.html">HOME</a></li>
+                <li class = "page"><a href="../regions.html">REGIONS</a></li>
+                <li class = "page"><a href="../#">ORGANIZATIONS</a></li>
+                <li class = "page"><a href="../#">INHABITANTS</a></li>
+                <li class = "page"><a href="../collection/collection.html">COLLECTION</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('nav-menu');
+                menu.classList.toggle('open');
+
+                const menuButton = document.getElementById('menu-btn');
+                menuButton.classList.toggle('active');
+
+            }
+        </script>
+
+
+        <script src="../main.js"></script> 
+    </body>
+</html>

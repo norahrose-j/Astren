@@ -1,0 +1,411 @@
+
+
+@font-face {
+    font-family: Script;
+    src: url(../fonts/Sail-Regular.ttf);
+}
+
+@font-face {
+    font-family: Text;
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: TextBold;
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: TextItalic;
+    src: url(../fonts/CormorantGaramond-Italic.ttf);
+}
+
+@font-face {
+    font-family: Heading;
+    src: url(../fonts/Italiana-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Text';
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER BAR + NAVIGATION MENU */
+.headerbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-image: url(../images/asharia/ashariabar.jpg);
+    background-size: cover;
+    height: 8vh;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-family: 'TextBold';
+}
+
+.menu-btn {
+    border-style: none;
+    font-family: 'TextBold';
+    transition: color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin-right: 1vw;
+    font-size: 23px;
+}
+  
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    color: rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    z-index: 99;
+}
+  
+.nav-menu ul {
+    list-style: none;
+    text-align: left;
+}
+  
+.nav-menu ul li {
+    font-family: 'Heading';
+    margin: 1.7rem 0;
+    margin-left: 3vw;
+    margin-top: 2rem;
+}
+  
+.nav-menu ul li a {
+    color: rgb(28, 28, 28);
+    text-decoration: none;
+    font-size: 4.5rem;
+    transition: color 0.3s;
+    transition: margin-left 0.3s;
+}
+  
+  .nav-menu ul li a:hover {
+    color: cadetblue;
+    margin-left: 2rem;
+  }
+  
+.nav-menu.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* SIDEBAR NAV */
+.sidenav {
+    background-color: #F4F3F3;
+    color: rgb(28, 28, 28);
+    width:17vw;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.167) inset;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    margin-top: 10vh;
+}
+
+.sidenav ul li {
+    margin-bottom: 4vh;
+}
+
+.sidenav a {
+    color: rgb(28, 28, 28);
+    transition: all 1s ease;
+}
+
+.sidenav a:hover {
+    font-family: TextBold;
+}
+
+.firstnav {
+    padding-top: 5vh;
+}
+
+/* SIDE TABLE */
+
+.table table {
+    border-collapse: collapse;
+    width: 10vw;
+    padding: 0;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+    float: right;
+}
+
+.table table tr p {
+    font-size: 17px;
+}
+
+.table table th p {
+    font-family: TextItalic;
+    font-size: 15px;
+    margin: 0;
+    padding: 0.5vh;
+    padding-bottom: 1vh;
+}
+
+tr:nth-child(even) {
+    box-sizing: border-box; 
+    border: 2px solid #ECECEC; 
+}
+
+tr:nth-child(odd) {
+    background-color: #ECECEC;
+    box-sizing: border-box; 
+    border: 2px solid #ECECEC; 
+}
+
+.bold {
+    font-family: TextBold;
+}
+
+.left {
+    padding-left: 2vw;
+    padding-right: 3vw;
+}
+
+.right {
+    padding-left: 0.5vw;
+}
+
+.topimg {
+   margin: 0;
+   padding: 0;
+   width: 20vw;
+}
+
+.flag {
+    text-align: center;
+}
+
+.flag img {
+    width: 7vw;
+    padding: 0.5vh;
+}
+
+.flag p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+}
+
+.crest {
+    text-align: center;
+}
+
+.crest img {
+    width: 5vw;
+    padding: 0.5vh;
+}
+
+.crest p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.5vh;
+}
+
+table .map {
+    width: 20vw;
+}
+
+/* MAIN BODY */
+.submain {
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+    z-index: 100;
+    box-shadow:0;
+    margin-left: 17vw;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+h1 {
+    font-family: Heading;
+    margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 50px;
+}
+
+h2 {
+    margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 30px;
+    font-family: TextBold;
+}
+
+h3 {
+    margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 20px;
+    font-family: TextBold; 
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.text p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 18px;
+}
+
+.divider {
+    margin-right: 7vw;
+    margin-left: 6vw;
+    color: #f4f3f350;
+    margin-top: 5vh;
+}
+
+.ccimg {
+    float: right;
+    width: 10vw;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
+.ccpara {
+    margin-bottom: 15vh;
+}
+
+.cctable {
+    text-align: center;
+}
+
+.cctable td {
+    box-sizing: border-box; 
+    border: 4px solid #ECECEC; 
+    width: 35vw;
+}
+
+.cctext {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    font-family: TextItalic;
+}
+
+.mainmap {
+    width: 27vw;
+    transition: all 0.5s ease;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainmap:hover {
+    opacity: 0.8;
+}
+
+.mappopup {
+    background-color: rgba(28, 28, 28, 0.73);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    display: none;
+}
+
+.popupimage {
+    width: 74vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5vh;
+}
+
+.fa-xmark {
+    color: #F4F3F3;
+    font-size: 30px;
+
+    position: fixed;
+    top: 0;
+    margin-left: 97.355vw;
+    margin-top: 1.7vh;
+
+    transition: all 0.5s ease;
+}
+
+.fa-xmark:hover {
+    color: #cacaca;
+    rotate: 180deg;
+}
+
+.fa-xmark:active {
+    transform: scale(0.8)
+}
+
+/* TABLE */
+.text table {
+    float: none;
+    border-collapse: collapse;
+    
+    margin-left: 4.9vw;
+    margin-top: 5vh;
+}
+
+.text table p {
+    margin: 0;
+    padding: 0;
+}
+
+.text table .crest {
+    width: 10vw;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+table .housename {
+    text-align: center;
+    width: 10vw;
+}
+
+table .housedesc {
+    text-align: center;
+    width: 50vw;
+}
+
+table .desctext {
+    text-wrap: wrap;
+    text-align: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}

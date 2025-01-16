@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="" href="style.css">
+    <title>Astren</title>
+    <script src="https://kit.fontawesome.com/84c7f98808.js" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+
+       <!-- <header class = "subhead">
+            <div class = "parallax" id = "kinemorehead"></div>
+            <div class = "content">
+                <p class = "subheadtext">Kinemore</p>
+            </div>
+        </header> -->
+
+        <header class = "subheader">
+            <div class = "subparallax" id = "submainheadkmore"></div>
+            <div class = "subcontent">
+                <p class = "subheadtext">Kinemore</p>
+            </div>
+        </header>
+
+         <main class = "submain">     
+            <p class = "motto">"The Northern Empire"</p>
+            <p class = "firstpara">
+            Kinemore is a cold, wooded nation in the north-west of 
+            Astren. It is home to many delegates and important figures of the Astran Empire. 
+            </p>
+            <img class = "mermacorn" src="../images/kinemore/kinemorecrest.png" alt="">
+
+            <a id = "geography"></a>
+            <p class = "title">GEOGRAPHY</p>
+            <p class = "firstpara">Kinemore is home to two large forests, the Whispering 
+            Wood and the Sunwood, as well as an arctic tundra in the far 
+            north. The Whispering Wood is known to be a haunted 
+            and cursed place, feared by those non-native to it, while the 
+            Sunwood is a holy and welcoming wood 
+            of much respect and admiration. The southern region of the nation
+            is the home of a mystical swamp known as the Grey Glades. The natural
+            magics at work there make it the perfect home for druids, naturalists
+            and many rare and unusual species.</p>
+            <img class = "map" src="../images/kinemore/kinemoremap.png" alt="">
+
+
+            <p class = "title">NOBILITY</p>
+            <a id = "nobility"></a>
+            <div class = "crests">
+                <div class = "crestcontainer">
+                    <img class = "crest" src="../images/kinemore/dubois.png" alt="">
+                    <p class = "crestname">DUBOIS</p>
+                    <p class = "crestloc">AETHERWORTH</p>
+                    <p class = "crestdesc">House Dubois hold dominion over the Western regions 
+                    of Kinemore, most notably the Whispering Wood. Headed by Lady Katherine Dubois.</p>
+                </div>
+
+                <div class = "crestcontainer">
+                    <img class = "crest" src="../images/kinemore/foxe.png" alt="">
+                    <p class = "crestname">FOXE</p>
+                    <p class = "crestloc">BACCAHAGEN</p>
+                    <p class = "crestdesc">House Foxe are Kinemore's representatives to 
+                    the Empire, and hold Kinemore's seat on the Imperial Council. Within the nation,
+                    they preside over the southeast. Headed by 
+                    Lord Eadwulf Foxe.</p>
+                </div>
+        
+                <div class = "crestcontainer">
+                    <img class = "crest" src="../images/kinemore/dietrich.png" alt="">
+                    <p class = "crestname">DIETRICH</p>
+                    <p class = "crestloc">PERIEDGE</p>
+                    <p class = "crestdesc">House Dietrich preside over the eastern and northernmost
+                    arctic regions of Kinemore. Headed by Lord Boreas Dietrich.</p>
+                </div>
+            </div>
+        </main>
+
+
+        <header id = "header">
+            <a href="#geography"><p>GEOGRAPHY</p></a>
+            <a href="#nobility"><p>NOBILITY</p></a>
+            <a href="#classes"><p>CLASSES</p></a>
+            <a href="#races"><p>RACES</p></a>
+            <a href="#politics"><p>POLITICS</p></a>
+            <button id="menu-btn" onclick="toggleMenu()">MENU</button>
+        </header>
+
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <li class = "currpage"><a href="../index.html">HOME</a></li>
+                <li class = "page"><a href="../regions.html">REGIONS</a></li>
+                <li class = "page"><a href="../#">ORGANIZATIONS</a></li>
+                <li class = "page"><a href="../#">INHABITANTS</a></li>
+                <li class = "page"><a href="../collection/collection.html">COLLECTION</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('nav-menu');
+                menu.classList.toggle('open');
+
+                const menuButton = document.getElementById('menu-btn');
+                menuButton.classList.toggle('active');
+
+            }
+        </script>
+
+
+        <script src="../main.js"></script> 
+    </body>
+</html>

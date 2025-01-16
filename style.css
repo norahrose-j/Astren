@@ -1,0 +1,507 @@
+
+
+@font-face {
+    font-family: Script;
+    src: url(fonts/Sail-Regular.ttf);
+}
+
+@font-face {
+    font-family: Text;
+    src: url(fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: TextBold;
+    src: url(fonts/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: TextItalic;
+    src: url(fonts/CormorantGaramond-Italic.ttf);
+}
+
+@font-face {
+    font-family: Heading;
+    src: url(fonts/Italiana-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Text';
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN PAGE HEADER */
+.header { 
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header a {
+    padding: 0%;
+    margin: 0%;
+    height: 10vh;
+    transition: all 0.5s ease;
+    margin-top: -2vh;
+}
+
+.header a:hover {
+    margin-top: -10vh;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#mainhead {
+    background-image: url('images/header.png');
+    height: 150%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.headtexttop {
+    font-family: 'Heading';
+    font-size: 50px;
+}
+
+.headtextbottom {
+    font-family: 'Script';
+    font-size: 130px;
+    margin-top: -7%;
+}
+
+.fa-chevron-down {
+    font-size: 30px;
+    padding-top: 0vh;
+    /* color: rgb(255, 255, 255); */
+}
+
+/* NAVIGATION MENU */
+.fa-bars {
+    color: rgb(28, 28, 17);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 100;
+  }
+
+#menu-btn {
+    border-style: none;
+    font-size: 22px;
+    transition: color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    color: #1c1c11;
+}
+
+#menu-btn.active {
+    color: #1c1c11 !important;
+}
+  
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255);
+    color: rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    z-index: 99;
+}
+  
+.nav-menu ul {
+    list-style: none;
+    text-align: left;
+}
+  
+.nav-menu ul li {
+    font-family: 'Heading';
+    margin: 1.7rem 0;
+    margin-left: 3vw;
+    margin-top: 2rem;
+}
+  
+.nav-menu ul li a {
+    color: rgb(28, 28, 28);
+    text-decoration: none;
+    font-size: 4.5rem;
+    transition: color 0.3s;
+    transition: margin-left 0.3s;
+}
+  
+  .nav-menu ul li a:hover {
+    color: cadetblue;
+    margin-left: 2rem;
+  }
+  
+.nav-menu.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.currpage {
+    color: rgb(79, 140, 142);
+}
+
+
+/* MAIN PAGE BODY CONTENT */
+main {
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+}
+
+#homemain {
+    padding-top: 13%;
+    padding-bottom: 11%;
+}
+
+.firstpara {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.mermacorn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+/* SUBPAGE HEADERS */
+.subheader { 
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.subparallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#submainheadkmore {
+    background-image: url('images/kinemore/kinemorehead.png');
+    height: 150%;
+}
+
+.subcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.subheadtext {
+    font-family: 'Script';
+    font-size: 80px;
+    align-self: center;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.topbar {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    color: rgb(28, 28, 28);
+    font-family: 'Heading';
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.subhead {
+    height: 65vh;
+}
+
+.submain {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+}
+
+/* LANDING PAGE STYLING */
+/* REGION STYLING */
+.regionsmain {
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+    height: 100vh;
+}
+
+.regionsmain a {
+    color: #1c1c11;
+}
+
+#landinghead {
+    background-image: url('images/header.png');
+    height: 150%;
+}
+
+.landingtext {
+    align-self: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.landingtexttop {
+    font-family: 'Script';
+    font-size: 40px;
+    margin-top: -5vh;
+}
+
+.landingtextbottom {
+    font-family: 'Heading';
+    font-size: 120px;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.alignleft {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-bottom: 20vh;
+}
+
+.lefttext {
+    margin-left: 5rem;
+}
+
+.alignright {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 11%;
+    margin-right: 11%;
+    text-align: right;
+    margin-bottom: 20vh;
+}
+
+.righttext {
+    margin-right: 5rem;
+}
+
+.regiontitle {
+    font-family: 'Heading';
+    font-size: 50px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.regiontitle span:hover {
+    color: cadetblue;
+}
+
+.regiongallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.regionicon {
+    width: 20vw;
+    height: 40vh;
+    margin: 1vw;
+    transition: all 0.8s ease;
+    overflow: hidden;
+}
+
+.regionicontext {
+    width: 20vw;
+    text-align: center;
+    align-self: center;
+    margin: 1vw;
+    transition: all 0.5s ease;
+}
+
+.centersq {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+#akoverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.658);
+    overflow: hidden;
+    width: 20vw;
+    height: 0;
+    transition: .5s ease;
+
+    margin-left: 17.5vw;
+    margin-bottom: 52.7vh;
+}
+
+#arkmoreoverlay:hover #akoverlay {
+    height: 40vh;
+}
+  
+.overlaytext {
+    color: white;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.texttitle {
+    font-family: Heading;
+    font-size: 40px;
+    margin-top: 15vh;
+}
+
+.textbody {
+    margin-top: 25vh;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.fadeAlt {
+    opacity: 1;
+}
+
+#regionicondefault {
+    padding: 0.3vw;
+    transition: all 0.5s ease;
+}
+
+/* .fadeOut {
+    margin-bottom: 15vh;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.fadeIn {
+    margin-top: -15vh;
+    transition: all .5s ease-in-out;
+    opacity: 1;
+} */
+
+.toprow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.botrow {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.hoverdesc {
+    display: none;
+}
+  
+/* .regionflag {
+    margin-top: 1.3rem;
+    width: 40%;
+}
+
+#arkmoreflag {
+    border-color: #b19700;
+    border-width: 0.5px;
+    border-style: solid;
+} */
+
+.motto {
+    font-family: 'Script';
+    font-size: 40px;
+    align-self: center;
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.title {
+    font-family: 'Heading';
+    font-size: 35px;
+    align-self: center;
+    text-align: center;
+    margin-top: 10%;
+    padding-top: 0%;
+}
+
+.map {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landscape {
+    text-align: center;
+}
+
+.crests {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 6%;
+    text-align: center;
+    align-self: center;
+}
+
+.crest {
+    width: 30%;
+}
+
+.crestname {
+    font-family: 'Heading';
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+}

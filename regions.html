@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="" href="style.css">
+    <title>Astren – Regions</title>
+    <script src="https://kit.fontawesome.com/84c7f98808.js" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+        <!-- <header class = "subheader">
+            <div class = "parallax" id = "landinghead"></div>
+            <div class = "content">
+                <p class = "landingtexttop"> </p>
+                <p class = "landingtextbottom">REGIONS</p>
+            </div>
+        </header> -->
+
+        <main class = "regionsmain">
+            <div class = "regiongallery">
+                <div class = "toprow">
+
+                    <div id = "arkmoreoverlay">
+                        <a id = "arkmoreicon" href="regions/arkmore.html">
+                            <img class = "regionicon" src="images/arkmore.jpg" alt="">
+                            <div id = "akoverlay">
+                                <p class = "overlaytext texttitle">ARKMORE</p>
+                                <p class = "overlaytext textbody">
+                                    A temperate, coastal country in the south-west of Astren.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class = "regionicontext centersq">
+                         
+                        <div id = "regionicondefault">
+                            <p style = "font-family:Heading;font-size: 40px;">REGIONS OF</p>
+                            <p style="font-family:Script;font-size:55px;margin-top:-8vh;">
+                                Astren </p> 
+                        </div>
+
+                        <!-- <div class = "hoverdesc" id = "regioniconarkmore">
+                            <p style = "font-family:Heading;font-size: 40px;">ARKMORE</p>
+                            <p>
+                                A temperate, coastal country in the south-west of Astren.</p>
+                        </div>
+
+                        <div class = "hoverdesc" id = "regioniconasharia">
+                            <p style = "font-family:Heading;font-size: 40px;">ASHARIA</p>
+                            <p style = "margin-top:-1vh;">
+                                A coastal country brimming with magic and history in eastern Astren.</p>
+                        </div>
+
+                        <div class = "hoverdesc" id = "regioniconkideta">
+                            <p style = "font-family:Heading;font-size: 40px;">KIDETA</p>
+                            <p style = "margin-top:-1vh;">
+                                A large desert country in the far north-east of Astren.</p>
+                        </div>
+
+                        <div class = "hoverdesc" id = "regioniconkinemore">
+                            <p style = "font-family:Heading;font-size: 40px;">KINEMORE</p>
+                            <p style = "margin-top:-1vh;">
+                                A  cold, northern, forest country in the north-west of Astren.</p>
+                        </div>
+
+                        <div class = "hoverdesc" id = "regioniconoth">
+                            <p style = "font-family:Heading;font-size: 40px;">OTH</p>
+                            <p style = "margin-top:-1vh;">
+                                A small, barren nation in the south of Astren.</p>
+                        </div> -->
+                        
+                    </div>
+
+                    <a href="regions/asharia.html">
+                        <img id = "ashariaicon" class = "regionicon" src="images/asharia.jpg" alt="">
+                    </a>
+                </div>
+                <div class = "botrow">
+                    <a href="regions/kideta.html">
+                        <img id = "kidetaicon" class = "regionicon" src="images/kideta.jpg" alt="">
+                    </a>
+
+                    <a href="regions/kinemore.html">
+                        <img id = "kinemoreicon" class = "regionicon centersq" src="images/kinemore.jpg" alt="">
+                    </a>
+                    
+                    <a href="regions/oth.html">
+                        <img id = "othicon" class = "regionicon" src="images/oth.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </main>
+
+        <header id = "header">
+            <button style="color: rgb(28, 28, 28);" id="menu-btn" onclick="toggleMenu()">
+                <i style="color: rgb(28, 28, 28);" class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+
+        <div id="nav-menu" class="nav-menu">
+            <ul>
+                <li class = "page"><a href="index.html">HOME</a></li>
+                <li class = "currpage"><a href="#">REGIONS</a></li>
+                <li class = "page"><a href="#">ORGANIZATIONS</a></li>
+                <li class = "page"><a href="#">INHABITANTS</a></li>
+                <li class = "page"><a href="collection/collection.html">COLLECTION</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById('nav-menu');
+                menu.classList.toggle('open');
+
+                const menuButton = document.getElementById('menu-btn');
+                menuButton.classList.toggle('active');
+
+                console.log(menuButton.classList);
+            }
+        </script>
+
+        <script src="main.js"></script> 
+    </body>
+</html>
