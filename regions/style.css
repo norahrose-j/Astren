@@ -75,6 +75,11 @@ a {
     background-size: cover;
 }
 
+#kidetabar {
+    background-image: url(../images/kideta/kidetabar.jpg);
+    background-size: cover;
+}
+
 .menu-btn {
     border-style: none;
     font-family: 'TextBold';
@@ -356,6 +361,10 @@ h3 {
 }
 
 #othmap {
+    width: 35vw;
+}
+
+#kidetamap {
     width: 35vw;
 }
 
