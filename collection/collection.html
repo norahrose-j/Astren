@@ -13,12 +13,15 @@
   <main>
 
     <div id = "searchfield">
-        <h1>Collection</h1>
-        <input id = "search" type="search" name="search" placeholder="Start typing to search..." value="">
+        <h1>COLLECTION</h1>
+        <input id = "search" type="search" name="search" placeholder="Search..." value="">
 
 
-        <div class = "filterflags">
-            
+        <div id = "filterbuttons">
+            <button class = "filterbutton" id = "equipfilter"><i class="filtericon fa-solid fa-shield-halved"></i></button>
+            <button class = "filterbutton" id = "magicfilter"><i class="filtericon fa-solid fa-wand-sparkles"></i></button>
+            <button class = "filterbutton" id = "npcfilter"><i class="filtericon fa-solid fa-person"></i></button>
+            <button class = "filterbutton" id = "monsterfilter"><i class="filtericon fa-solid fa-dragon"></i></button>
         </div>
     </div>
 
@@ -26,7 +29,7 @@
     <!-- ARCANAEUM -->
     <div class = 'statblock'>
         <div class = 'half1'>
-            <p class = 'title bold'>ARCANALOTH</p>
+            <p class = 'title bold'>ARCANALOTH (ARCANAEUM)</p>
             <p class = 'italic'>Medium fiend, neutral evil</p>
             <hr>
             <p><span class = 'bold'>Armor Class</span> 17 (natural armour)</p>

@@ -113,22 +113,24 @@ a {
 
 /* SEARCH FIELD */
 #searchfield {
-    margin-top: 16vh;
+    margin-top: 10vh;
     margin-bottom: 16vh;
     padding-top: 2vh;
     padding-bottom: 7vh;
     text-align: center;
-    width: 80vw;
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: cadetblue;
+    background-image: url(../images/header.png);
 }
 
 h1 {
-    font-family: 'Script';
-    font-size: 70px;
+    font-family: Heading;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 5px 5px 5px #1c1c1189;
 }
 
 #search {
@@ -136,12 +138,46 @@ h1 {
     height: 5vh;
     font-family: 'TextItalic';
     font-size: 20px;
+    padding-left: 2vw;
 
-    border-width: 3px;
-    border-color: #1c1c11;
-    border-style: solid;
+    border-style: none;
+    box-shadow: 5px 5px 5px #1c1c1175;
 }
 
+#filterbuttons {
+    margin-top: 5vh;
+    width: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filterbutton {
+    width: 5vw;
+    height: 5vw;
+    background-color: #fff;
+
+    border-style: none;
+    box-shadow: 5px 5px 5px #1c1c1175;
+    transition: all 0.5s ease;
+}
+
+.filterbutton:hover {
+    background-color: #dadada;
+}
+
+.filtericon {
+    font-size: 25px;
+    color: #363d12;
+
+    transition: all 0.5s ease;
+}
+
+.fa-person {
+    font-size: 30px;
+}
 
 /* MAIN CONTENT */
 p {
