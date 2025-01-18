@@ -180,6 +180,61 @@ h1 {
 }
 
 /* MAIN CONTENT */
+
+main {
+    padding-bottom: 8vh;
+}
+
+.entry {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 10px #1c1c1126;
+}
+
+.entryheader {
+    background-color: #dadada;
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: 5px 5px 10px #1c1c1126;
+    margin-top: 6vh;
+}
+
+h2 {
+    font-family: TextBold;
+    margin-left: 2vw;
+    font-size: 25px;
+}
+
+.entryheader .fa-person {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1.5vw;
+}
+
+.entryheader .fa-xmark {
+    transform: rotate(45deg);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+
+    color: #818181;
+    margin-left: auto;
+    margin-right: 2vw;
+
+    transition: all 0.3s ease;
+}
+
+.intox {
+    transform: rotate(0deg);
+}
+
+.intoplus {
+    transform: rotate(45deg);
+}
+
+
 p {
     margin: 0%;
     padding: 0%;
@@ -198,35 +253,41 @@ p {
     font-size: 23px;
 }
 
-th {
-    padding-left: 17px;
-    padding-right: 17px;
-}
-
 table {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
+th {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
 .statblock {
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-bottom: 8vh;
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 4vh;
     padding-bottom: 4vh;
     display: flex;
     flex-wrap: nowrap;
-    background-image: url(../images/);
+    
+    display: none;
+    height: 0;
+    transition: height 0.5s ease;
+}
+
+.showstats {
+    display: block;
+    height: auto;
 }
 
 .half1 {
-    max-width: 45vw;
+    max-width: 50%;
 }
 
 .half2 {  
-    max-width: 45vw;
+    max-width: 50%;
     margin-left: 2vw;
 }
 
