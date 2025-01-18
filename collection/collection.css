@@ -193,6 +193,14 @@ main {
     box-shadow: 5px 5px 10px #1c1c1126;
 }
 
+.showentry {
+    display: block;
+}
+
+.hideentry {
+    display: none;
+}
+
 .entryheader {
     background-color: #dadada;
     display: flex;
