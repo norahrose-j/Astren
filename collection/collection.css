@@ -205,12 +205,11 @@ main {
     background-color: #dadada;
     display: flex;
     flex-wrap: nowrap;
-    box-shadow: 5px 5px 10px #1c1c1126;
+    box-shadow: 0px 5px 15px #1c1c1124;
     margin-top: 6vh;
 }
 
 h2 {
-    font-family: TextBold;
     margin-left: 2vw;
     font-size: 25px;
 }
@@ -218,7 +217,14 @@ h2 {
 .entryheader .fa-person {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 1.5vw;
+    margin-left: 2vw;
+}
+
+.entryheader .fa-wand-sparkles {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
 }
 
 .entryheader .fa-plus {
@@ -266,17 +272,27 @@ th {
     padding-right: 1vw;
 }
 
-.statblock {
+.block {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 4vh;
     padding-bottom: 4vh;
-    display: flex;
-    flex-wrap: nowrap;
     
     display: none;
     height: 0;
     transition: all 0.5s ease;
+}
+
+.statblock {
+    display: flex;
+    flex-wrap: nowrap;
+    display: none;
+}
+
+.itemblock {
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
 }
 
 .showstats {
@@ -298,3 +314,7 @@ ul {
     padding-left: 20px;
     margin-left: 0%;
 }
+
+/* .swordimg {
+    width: 30vw;
+} */

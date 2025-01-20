@@ -1,6 +1,6 @@
 // SHOW / HIDE STATBLOCK
 const pluses = document.getElementsByClassName('fa-plus');
-const statblocks = document.getElementsByClassName('statblock');
+const statblocks = document.getElementsByClassName('block');
 
 for (let i = 0; i < pluses.length; i++) {
     const element = pluses[i];
