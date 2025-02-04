@@ -165,12 +165,12 @@ h1 {
 }
 
 .filterbutton:hover {
-    background-color: #dadada;
+    background-color: #BC9116;
 }
 
 .filtericon {
     font-size: 25px;
-    color: #363d12;
+    color: #BC9116;
 
     transition: all 0.5s ease;
 }
@@ -193,11 +193,31 @@ main {
     box-shadow: 5px 5px 10px #1c1c1126;
 }
 
-.showentry {
-    display: block;
+.togglebgcolor {
+    background-color: #BC9116;
 }
 
-.hideentry {
+.togglecolor {
+    color: #fff;
+}
+
+.hideNpcEntry {
+    display: none;
+}
+
+.hideMonsterEntry {
+    display: none;
+}
+
+.hideMagicEntry {
+    display: none;
+}
+
+.hideEquipEntry {
+    display: none;
+}
+
+.hidefromsearch {
     display: none;
 }
 
