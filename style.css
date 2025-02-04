@@ -271,237 +271,47 @@ main {
 
 /* LANDING PAGE STYLING */
 /* REGION STYLING */
-.regionsmain {
-    background-color: rgb(255, 255, 255);
-    color: rgb(28, 28, 28);
-    height: 100vh;
-}
 
-.regionsmain a {
+#regionmain {
     color: #1c1c11;
+    background-color: #fff;
 }
 
-#landinghead {
-    background-image: url('images/header.png');
-    height: 150%;
+#gallery img {
+    width: 20vw;
 }
 
-.landingtext {
-    align-self: center;
-    margin: 0%;
-    padding: 0%;
-}
+#gallery section {
+    width: 20vw;
+    text-align: center;
 
-.landingtexttop {
-    font-family: 'Script';
-    font-size: 40px;
-    margin-top: -5vh;
-}
-
-.landingtextbottom {
-    font-family: 'Heading';
-    font-size: 120px;
-    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
-}
-
-.alignleft {
     display: flex;
-    flex-wrap: nowrap;
-    margin-left: 11%;
-    margin-right: 11%;
-    margin-bottom: 20vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
-.lefttext {
-    margin-left: 5rem;
-}
-
-.alignright {
-    display: flex;
-    flex-wrap: nowrap;
-    margin-left: 11%;
-    margin-right: 11%;
-    text-align: right;
-    margin-bottom: 20vh;
-}
-
-.righttext {
-    margin-right: 5rem;
-}
-
-.regiontitle {
-    font-family: 'Heading';
-    font-size: 50px;
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
-.regiontitle span:hover {
-    color: cadetblue;
-}
-
-.regiongallery {
+#gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
-.regionicon {
-    width: 20vw;
-    height: 40vh;
-    margin: 1vw;
-    transition: all 0.8s ease;
-    overflow: hidden;
+#toprow {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 3vh;
 }
 
-.regionicontext {
-    width: 20vw;
-    text-align: center;
-    align-self: center;
-    margin: 1vw;
-    transition: all 0.5s ease;
+#botrow {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.centersq {
+.galcenter {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
-}
-
-#akoverlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.658);
-    overflow: hidden;
-    width: 20vw;
-    height: 0;
-    transition: .5s ease;
-
-    margin-left: 17.5vw;
-    margin-bottom: 52.7vh;
-}
-
-#arkmoreoverlay:hover #akoverlay {
-    height: 40vh;
-}
-  
-.overlaytext {
-    color: white;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.texttitle {
-    font-family: Heading;
-    font-size: 40px;
-    margin-top: 15vh;
-}
-
-.textbody {
-    margin-top: 25vh;
-}
-
-.fade {
-    opacity: 0;
-}
-
-.fadeAlt {
-    opacity: 1;
-}
-
-#regionicondefault {
-    padding: 0.3vw;
-    transition: all 0.5s ease;
-}
-
-/* .fadeOut {
-    margin-bottom: 15vh;
-    opacity: 0;
-    transition: all .5s ease-in-out;
-}
-
-.fadeIn {
-    margin-top: -15vh;
-    transition: all .5s ease-in-out;
-    opacity: 1;
-} */
-
-.toprow {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.botrow {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.hoverdesc {
-    display: none;
-}
-  
-/* .regionflag {
-    margin-top: 1.3rem;
-    width: 40%;
-}
-
-#arkmoreflag {
-    border-color: #b19700;
-    border-width: 0.5px;
-    border-style: solid;
-} */
-
-.motto {
-    font-family: 'Script';
-    font-size: 40px;
-    align-self: center;
-    text-align: center;
-    margin-top: 0%;
-    padding-top: 0%;
-}
-
-.title {
-    font-family: 'Heading';
-    font-size: 35px;
-    align-self: center;
-    text-align: center;
-    margin-top: 10%;
-    padding-top: 0%;
-}
-
-.map {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.landscape {
-    text-align: center;
-}
-
-.crests {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin-top: 6%;
-    text-align: center;
-    align-self: center;
-}
-
-.crest {
-    width: 30%;
-}
-
-.crestname {
-    font-family: 'Heading';
-    font-size: 25px;
-    text-align: center;
-    align-self: center;
 }
