@@ -178,9 +178,8 @@ a {
     border-collapse: collapse;
     width: 10vw;
     padding: 0;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    margin-bottom: 5vh;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
     margin-top: 10vh;
     float: right;
 }
@@ -271,6 +270,7 @@ table .map {
     margin-left: 17vw;
     padding-top: 8vh;
     padding-bottom: 8vh;
+    padding-right: 5vw;
 }
 
 h1 {
@@ -338,6 +338,32 @@ h3 {
     padding-right: 3vw;
 
     font-family: TextItalic;
+}
+
+.imgcontainer {
+    float: right;
+    margin-left: -2vw;
+}
+
+.imgcontainer table {
+    background-color: #F4F3F3;
+    width: 13vw;
+}
+
+.imgcontainer table p {
+    font-family: TextItalic;
+    font-size: 15px;
+    margin: 0;
+    padding: 0.5vh;
+    padding-bottom: 1vh;
+}
+
+.geogimg {
+    width: 13vw;
+}
+
+.undertable {
+    padding-top: 7vh;
 }
 
 .mainmap {
