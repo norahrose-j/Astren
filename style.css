@@ -38,6 +38,12 @@ body {
     background-color: #fff;
 }
 
+
+p {
+    margin: 0%;
+    padding: 0%;
+}
+
 a {
     text-decoration: none;
 }
@@ -87,27 +93,33 @@ a {
     position: relative;
 }
 
-.headtexttop {
+#headtexttop {
     font-family: 'Heading';
     font-size: 50px;
 }
 
-.headtextbottom {
+#headtextbottom {
     font-family: 'Script';
     font-size: 130px;
-    margin-top: -7%;
+    margin-top: -5vh;
 }
 
 .fa-chevron-down {
     font-size: 30px;
-    padding-top: 0vh;
-    /* color: rgb(255, 255, 255); */
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+    color: #fff;
+}
+
+#homebars {
+    color: #fff;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.588);
 }
 
 /* NAVIGATION MENU */
-.fa-bars {
+/* .fa-bars {
     color: rgb(28, 28, 17);
-}
+} */
 
 #header {
     position: fixed;
@@ -122,7 +134,6 @@ a {
     font-size: 22px;
     transition: color 0.3s ease;
     background-color: rgba(0, 0, 0, 0);
-    color: #1c1c11;
 }
 
 #menu-btn.active {
@@ -188,8 +199,8 @@ main {
 }
 
 #homemain {
-    padding-top: 13%;
-    padding-bottom: 11%;
+    padding-top: 35vh;
+    padding-bottom: 22vh;
 }
 
 .firstpara {
@@ -203,46 +214,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 10%;
-}
-
-/* SUBPAGE HEADERS */
-.subheader { 
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
-}
-
-.subparallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-}
-
-#submainheadkmore {
-    background-image: url('images/kinemore/kinemorehead.png');
-    height: 150%;
-}
-
-.subcontent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    position: relative;
-}
-
-.subheadtext {
-    font-family: 'Script';
-    font-size: 80px;
-    align-self: center;
-    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
 
 .topbar {
@@ -259,18 +230,8 @@ main {
     z-index: 3;
 }
 
-.subhead {
-    height: 65vh;
-}
 
-.submain {
-    padding-top: 8%;
-    padding-bottom: 8%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(28, 28, 28);
-}
-
-/* REGION STYLING */
+/* REGION PAGE STYLING */
 
 #regionmain {
     color: #1c1c11;
@@ -374,9 +335,4 @@ main {
 #othhover {
     left: 61.5vw;
     background-color: #12110eb4;
-}
-
-p {
-    margin: 0%;
-    padding: 0%;
 }
