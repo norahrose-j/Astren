@@ -323,7 +323,6 @@ main {
 }
 
 .hoveroverlay {
-    background-color: #12120bd2;
     height: 20vw;
     width: 20vw;
     color: #fff;
@@ -345,18 +344,36 @@ main {
 
 .hoveroverlay p {
     display: none;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.588);
+    padding: 1.5vw;
+}
+
+.desctext {
+    font-family: Text;
+    font-size: 15px;
+}
+
+#arkmorehover {
+    background-color: #585542b4;
 }
 
 #ashariahover {
     left: 61.5vw;
+    background-color: #545842b4;
+}
+
+#kidetahover {
+    background-color: #584b42b4;
 }
 
 #kmorehover {
     left: 40vw;
+    background-color: #252c2bb4;
 }
 
 #othhover {
     left: 61.5vw;
+    background-color: #12110eb4;
 }
 
 p {
