@@ -21,6 +21,7 @@ const npc = document.getElementById('npcfilter');
 const monster = document.getElementById('monsterfilter');
 const equip = document.getElementById('equipfilter');
 const magic = document.getElementById('magicfilter');
+const backg = document.getElementById('backgfilter');
 
 const entries = document.getElementsByClassName('entry');
 
@@ -162,6 +163,42 @@ magic.addEventListener('click', function () {
             eList.remove('hideMagicEntry');
             magicClicked = false;
             magicIcon.classList.remove('togglecolor');
+        }
+    }
+});
+
+var backgClicked = false;
+backg.addEventListener('mouseover', function () {
+    const backgIcon = document.getElementById('backg');
+    backgIcon.style.color = '#fff'
+})
+
+backg.addEventListener('mouseleave', function () {
+    console.log(backgClicked);
+    const icon = document.getElementById('backg');
+    if (backgClicked == false) {
+        icon.style.color = '#BC9116';
+    } else {
+        icon.style.color == '#fff'
+    }
+})
+
+backg.addEventListener('click', function () {
+    backg.classList.toggle('togglebgcolor');
+    const backgIcon = document.getElementById('backg');
+
+    for (let i = 0; i < entries.length; i++) {
+        const entry = entries[i];
+        const eList = entry.classList;
+
+        if ((!eList.contains('backg')) && (!eList.contains('hidebackgEntry'))) {
+            eList.add('hidebackgEntry');
+            backgClicked = true;
+            backgIcon.classList.add('togglecolor');
+        } else if ((!eList.contains('backg') && eList.contains('hidebackgEntry'))) {
+            eList.remove('hidebackgEntry');
+            backgClicked = false;
+            backgIcon.classList.remove('togglecolor');
         }
     }
 });

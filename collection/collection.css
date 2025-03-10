@@ -217,6 +217,10 @@ main {
     display: none;
 }
 
+.hidebackgEntry {
+    display: none;
+}
+
 .hidefromsearch {
     display: none;
 }
@@ -241,6 +245,13 @@ h2 {
 }
 
 .entryheader .fa-wand-sparkles {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+}
+
+.entryheader .fa-book-bookmark {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -334,7 +345,3 @@ ul {
     padding-left: 20px;
     margin-left: 0%;
 }
-
-/* .swordimg {
-    width: 30vw;
-} */
