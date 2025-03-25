@@ -29,8 +29,11 @@ function changeColorClick(element) {
     })
 }
 
+// REGION PAGE HOVER OVERLAYS
+
 const arkmoreImg = document.getElementById('arkmoreimg');
 const arkmoreHover = document.getElementById('arkmorehover');
+
 
 arkmoreImg.addEventListener('mouseenter', function () {
     arkmoreHover.classList.remove('noheight');
@@ -185,6 +188,21 @@ othImg.addEventListener('mouseleave', function () {
     text.style.display = "none";
 })
 
+// REGION PAGES -- HIDE TOPBAR
+const menuBars = document.getElementsByClassName('fa-bars');
+
+for (let i = 0; i < menuBars.length; i++) {
+    const bars = menuBars[i];
+    const clist = bars.classList;
+
+    bars.addEventListener('click', function () {
+        const oth = document.getElementById('othheading');
+        clist.classList.toggle('othbar');
+        cli.classList.toggle('whitebar');
+        console.log('hey')
+    });
+
+};
 
 // var mapPopUp = document.getElementById('ashariamap');
 // mapPopUp.addEventListener('click', function () {
@@ -192,8 +210,9 @@ othImg.addEventListener('mouseleave', function () {
 //     popUpImg.style.display = 'block';
 // })
 
-// var closePopUp = document.getElementById('ashariaxmark'); 
+// var closePopUp = document.getElementById('ashariaxmark');
 // closePopUp.addEventListener('click', function () {
 //     const popUpImg = document.getElementById('ashariapopup');
 //     popUpImg.style.display = 'hidden';
 // })
+

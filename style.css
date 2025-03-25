@@ -230,8 +230,15 @@ main {
     z-index: 3;
 }
 
+.bold {
+    font-family: 'TextBold';
+}
+
 
 /* REGION PAGE STYLING */
+#darkbars {
+    color: #1c1c11;
+}
 
 #regionmain {
     color: #1c1c11;
