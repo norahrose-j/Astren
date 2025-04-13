@@ -117,9 +117,9 @@ a {
 }
 
 /* NAVIGATION MENU */
-/* .fa-bars {
-    color: rgb(28, 28, 17);
-} */
+.fa-bars {
+    cursor: pointer;
+}
 
 #header {
     position: fixed;
@@ -239,10 +239,12 @@ main {
 #darkbars {
     color: #1c1c11;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 #darkbars:hover {
     text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.352);
+    cursor: pointer;
 }
 
 #regionmain {

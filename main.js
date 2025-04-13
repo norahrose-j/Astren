@@ -29,41 +29,74 @@ function changeColorClick(element) {
     })
 }
 
+// OPEN/CLOSE MENU
+try {
+    const menuBtns = document.getElementsByClassName('menu-btn');
+    const xmarks = document.getElementsByClassName('close-menu-btn');
+    const menus = document.getElementsByClassName('nav-menu');
+
+
+    for (let i = 0; i < menuBtns.length; i++) {
+        const menuBtn = menuBtns[i];
+        
+        menuBtn.addEventListener('click', function () {
+            menus[i].style.visibility = 'visible';
+            menuBtn.style.display = 'none';
+            xmarks[i].style.display = 'block';
+        })
+    }
+
+    for (let i = 0; i < xmarks.length; i++) {
+        const xmark = xmarks[i];
+        
+        xmark.addEventListener('click', function () {
+            menus[i].style.visibility = 'hidden';
+            menuBtns[i].style.display = 'block';
+            xmark.style.display = 'none';
+        })
+    }
+
+} catch (TypeError) {
+
+}
+
 // REGION PAGE HOVER OVERLAYS
+try {
+    const arkmoreImg = document.getElementById('arkmoreimg');
+    const arkmoreHover = document.getElementById('arkmorehover');
 
-const arkmoreImg = document.getElementById('arkmoreimg');
-const arkmoreHover = document.getElementById('arkmorehover');
+    arkmoreImg.addEventListener('mouseenter', function () {
+        arkmoreHover.classList.remove('noheight');
+    
+        const text = document.getElementById('arkmoretext')
+        text.style.display = "block";
+    })
+    
+    arkmoreHover.addEventListener('mouseenter', function () {
+        arkmoreHover.classList.remove('noheight');
+    
+        const text = document.getElementById('arkmoretext')
+        text.style.display = "block";
+    })
+    
+    arkmoreHover.addEventListener('mouseleave', function () {
+        arkmoreHover.classList.add('noheight');
+    
+        const text = document.getElementById('arkmoretext')
+        text.style.display = "none";
+    })
+    
+    arkmoreImg.addEventListener('mouseleave', function () {
+        arkmoreHover.classList.add('noheight');
+    
+        const text = document.getElementById('arkmoretext')
+        text.style.display = "none";
+    })
+} catch (TypeError) {
+}
 
-
-arkmoreImg.addEventListener('mouseenter', function () {
-    arkmoreHover.classList.remove('noheight');
-
-    const text = document.getElementById('arkmoretext')
-    text.style.display = "block";
-})
-
-arkmoreHover.addEventListener('mouseenter', function () {
-    arkmoreHover.classList.remove('noheight');
-
-    const text = document.getElementById('arkmoretext')
-    text.style.display = "block";
-})
-
-arkmoreHover.addEventListener('mouseleave', function () {
-    arkmoreHover.classList.add('noheight');
-
-    const text = document.getElementById('arkmoretext')
-    text.style.display = "none";
-})
-
-arkmoreImg.addEventListener('mouseleave', function () {
-    arkmoreHover.classList.add('noheight');
-
-    const text = document.getElementById('arkmoretext')
-    text.style.display = "none";
-})
-
-const ashariaImg = document.getElementById('ashariaimg');
+try {
+    const ashariaImg = document.getElementById('ashariaimg');
 const ashariaHover = document.getElementById('ashariahover');
 
 ashariaImg.addEventListener('mouseenter', function () {
@@ -93,8 +126,12 @@ ashariaImg.addEventListener('mouseleave', function () {
     const text = document.getElementById('ashariatext')
     text.style.display = "none";
 })
+} catch (TypeError) {
+    
+}
 
-const kidetaImg = document.getElementById('kidetaimg');
+try {
+    const kidetaImg = document.getElementById('kidetaimg');
 const kidetaHover = document.getElementById('kidetahover');
 
 kidetaImg.addEventListener('mouseenter', function () {
@@ -124,40 +161,47 @@ kidetaImg.addEventListener('mouseleave', function () {
     const text = document.getElementById('kidetatext')
     text.style.display = "none";
 })
+} catch (TypeError) {
+    
+}
 
-const kmoreImg = document.getElementById('kmoreimg');
-const kmoreHover = document.getElementById('kmorehover');
+try {
+    const kmoreImg = document.getElementById('kmoreimg');
+    const kmoreHover = document.getElementById('kmorehover');
+    
+    kmoreImg.addEventListener('mouseenter', function () {
+        kmoreHover.classList.remove('noheight');
+    
+        const text = document.getElementById('kmoretext')
+        text.style.display = "block";
+    })
+    
+    kmoreHover.addEventListener('mouseenter', function () {
+        kmoreHover.classList.remove('noheight');
+    
+        const text = document.getElementById('kmoretext')
+        text.style.display = "block";
+    })
+    
+    kmoreHover.addEventListener('mouseleave', function () {
+        kmoreHover.classList.add('noheight');
+    
+        const text = document.getElementById('kmoretext')
+        text.style.display = "none";
+    })
+    
+    kmoreImg.addEventListener('mouseleave', function () {
+        kmoreHover.classList.add('noheight');
+    
+        const text = document.getElementById('kmoretext')
+        text.style.display = "none";
+    })  
+} catch (TypeError) {
+    
+}
 
-kmoreImg.addEventListener('mouseenter', function () {
-    kmoreHover.classList.remove('noheight');
-
-    const text = document.getElementById('kmoretext')
-    text.style.display = "block";
-})
-
-kmoreHover.addEventListener('mouseenter', function () {
-    kmoreHover.classList.remove('noheight');
-
-    const text = document.getElementById('kmoretext')
-    text.style.display = "block";
-})
-
-kmoreHover.addEventListener('mouseleave', function () {
-    kmoreHover.classList.add('noheight');
-
-    const text = document.getElementById('kmoretext')
-    text.style.display = "none";
-})
-
-kmoreImg.addEventListener('mouseleave', function () {
-    kmoreHover.classList.add('noheight');
-
-    const text = document.getElementById('kmoretext')
-    text.style.display = "none";
-})
-
-
-const othImg = document.getElementById('othimg');
+try {
+    const othImg = document.getElementById('othimg');
 const othHover = document.getElementById('othhover');
 
 othImg.addEventListener('mouseenter', function () {
@@ -187,32 +231,17 @@ othImg.addEventListener('mouseleave', function () {
     const text = document.getElementById('othtext')
     text.style.display = "none";
 })
+} catch (TypeError) {
+    
+}
 
-// REGION PAGES -- HIDE TOPBAR
-const menuBars = document.getElementsByClassName('fa-bars');
+var mapPopUp = document.getElementById('arkmoremap');
+const popUpImg = document.getElementById('arkmorepopup');
+mapPopUp.addEventListener('click', function () {
+    popUpImg.style.display = 'block';
+})
 
-for (let i = 0; i < menuBars.length; i++) {
-    const bars = menuBars[i];
-    const clist = bars.classList;
-
-    bars.addEventListener('click', function () {
-        const oth = document.getElementById('othheading');
-        clist.classList.toggle('othbar');
-        cli.classList.toggle('whitebar');
-        console.log('hey')
-    });
-
-};
-
-// var mapPopUp = document.getElementById('ashariamap');
-// mapPopUp.addEventListener('click', function () {
-//     const popUpImg = document.getElementById('ashariapopup');
-//     popUpImg.style.display = 'block';
-// })
-
-// var closePopUp = document.getElementById('ashariaxmark');
-// closePopUp.addEventListener('click', function () {
-//     const popUpImg = document.getElementById('ashariapopup');
-//     popUpImg.style.display = 'hidden';
-// })
+popUpImg.addEventListener('click', function () {
+    popUpImg.style.display = 'none';
+})
 

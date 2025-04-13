@@ -342,12 +342,11 @@
 
                 <img id = "othmap" class = "mainmap" src="../images/oth/map.png" alt="">
 
-                <!-- <div class = "mappopup" id = "ashariapopup">
+                <div class = "mappopup" id = "ashariapopup">
                     <div class = "popupcontainer">
                         <img id = "ashariaimgpp" class = "popupimage" src="../images/asharia/map.png" alt="">
-                        <button class = "xmark" id = "ashariaxmark"><i class="fa-solid fa-xmark"></i></button>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </main>
@@ -355,6 +354,7 @@
 
         <header id = "othheading" class = "othbar headerbar">
             <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            <button class="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
         </header>
 
         <div id="nav-menu" class="nav-menu">
@@ -366,18 +366,6 @@
                 <li class = "page"><a href="../collection/collection.html">COLLECTION</a></li>
             </ul>
         </div>
-
-        <script>
-            function toggleMenu() {
-                var menu = document.getElementById('nav-menu');
-                menu.classList.toggle('open');
-
-                const menuButton = document.getElementById('menu-btn');
-                menuButton.classList.toggle('active');
-
-            }
-        </script>
-
 
         <script src="../main.js"></script> 
     </body>
