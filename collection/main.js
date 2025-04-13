@@ -1,3 +1,34 @@
+// OPEN/CLOSE MENU
+try {
+    const menuBtns = document.getElementsByClassName('menu-btn');
+    const xmarks = document.getElementsByClassName('close-menu-btn');
+    const menus = document.getElementsByClassName('nav-menu');
+
+
+    for (let i = 0; i < menuBtns.length; i++) {
+        const menuBtn = menuBtns[i];
+        
+        menuBtn.addEventListener('click', function () {
+            menus[i].style.visibility = 'visible';
+            menuBtn.style.display = 'none';
+            xmarks[i].style.display = 'block';
+        })
+    }
+
+    for (let i = 0; i < xmarks.length; i++) {
+        const xmark = xmarks[i];
+        
+        xmark.addEventListener('click', function () {
+            menus[i].style.visibility = 'hidden';
+            menuBtns[i].style.display = 'block';
+            xmark.style.display = 'none';
+        })
+    }
+
+} catch (TypeError) {
+
+}
+
 // SHOW / HIDE STATBLOCK
 const pluses = document.getElementsByClassName('fa-plus');
 const statblocks = document.getElementsByClassName('block');
