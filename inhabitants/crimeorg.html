@@ -11,9 +11,9 @@
         <nav class = "sidenav">
             <ul>
                 <li class = "firstnav" style = "color:rgb(207, 207, 207);font-size:20px;">CONTENT</li><br>
-                <a class = "menAbstract sidebarentry" href="#abstract"><li><b>Abstract</b></li></a><br>
-                <a class = "menGeo sidebarentry" href="#tguild"><li><b>Thieves' Guild</b></li></a><br>
-                <a class = "menFeat sidebarentry" href="#pirates"><li><b>Pirate Ships</b></li></a><br>
+                <a class = "sidebarentry" href="#abstract"><li><b>Abstract</b></li></a><br>
+                <a class = "sidebarentry" href="#tguild"><li><b>Thieves' Guild</b></li></a><br>
+                <a class = "sidebarentry" href="#pirates"><li><b>Pirate Ships</b></li></a><br>
             </ul>
         </nav> 
 
@@ -79,16 +79,25 @@
         </main>
 
         <header class = "headerbar">
+            <button class="open-menu"><i class="fa-solid fa-ellipsis"></i></button>
             <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
             <button class="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
         </header>
+
+        <div class="collapse-menu">
+            <ul>
+                <a class = "sidebarentry" href="#abstract"><li><b>Abstract</b></li></a><br>
+                <a class = "sidebarentry" href="#tguild"><li><b>Thieves' Guild</b></li></a><br>
+                <a class = "sidebarentry" href="#pirates"><li><b>Pirate Ships</b></li></a><br>
+            </ul>            
+        </div>
 
         <div class="nav-menu">
             <ul>
                 <li class = "currpage"><a href="../index.html">HOME</a></li>
                 <li class = "page"><a href="../regions.html">REGIONS</a></li>
-                <li class = "page"><a href="../#">HISTORY</a></li>
-                <li class = "page"><a href="../#">INHABITANTS</a></li>
+                <li class = "page"><a href="../history.html">HISTORY</a></li>
+                <li class = "page"><a href="../inhabitants.html">INHABITANTS</a></li>
                 <li class = "page"><a href="../collection/collection.html">COLLECTION</a></li>
             </ul>
         </div>
