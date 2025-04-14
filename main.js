@@ -34,6 +34,7 @@ try {
     const menuBtns = document.getElementsByClassName('menu-btn');
     const xmarks = document.getElementsByClassName('close-menu-btn');
     const menus = document.getElementsByClassName('nav-menu');
+    const opens = document.getElementsByClassName('fa-ellipsis');
 
 
     for (let i = 0; i < menuBtns.length; i++) {
@@ -43,6 +44,11 @@ try {
             menus[i].style.visibility = 'visible';
             menuBtn.style.display = 'none';
             xmarks[i].style.display = 'block';
+
+            for (let i = 0; i < opens.length; i++) {
+                const openBtn = opens[i];
+                openBtn.style.display = 'none';
+            }
         })
     }
 
@@ -53,10 +59,14 @@ try {
             menus[i].style.visibility = 'hidden';
             menuBtns[i].style.display = 'block';
             xmark.style.display = 'none';
+
+            for (let i = 0; i < opens.length; i++) {
+                const openBtn = opens[i];
+                openBtn.style.display = 'block';
+            }
         })
     }
 
-    const opens = document.getElementsByClassName('open-menu');
     const collapseMenus = document.getElementsByClassName('collapse-menu');
 
 
@@ -64,6 +74,8 @@ try {
         const openBtn = opens[i];
         
         openBtn.addEventListener('click', function () {
+            openBtn.classList.toggle('clicked-ellipsis');
+
             if (collapseMenus[i].style.display === 'block') {
                 collapseMenus[i].style.display = 'none';
             } else {
