@@ -235,6 +235,9 @@ othImg.addEventListener('mouseleave', function () {
     
 }
 
+// HOVER
+const subheadings = document.getElementsByClassName('subheading');
+
 var mapPopUp = document.getElementById('arkmoremap');
 const popUpImg = document.getElementById('arkmorepopup');
 mapPopUp.addEventListener('click', function () {
