@@ -56,6 +56,22 @@ try {
         })
     }
 
+    const opens = document.getElementsByClassName('open-menu');
+    const collapseMenus = document.getElementsByClassName('collapse-menu');
+
+
+    for (let i = 0; i < opens.length; i++) {
+        const openBtn = opens[i];
+        
+        openBtn.addEventListener('click', function () {
+            if (collapseMenus[i].style.display === 'block') {
+                collapseMenus[i].style.display = 'none';
+            } else {
+                collapseMenus[i].style.display = 'block';
+            }           
+        })
+    }
+
 } catch (TypeError) {
 
 }
@@ -235,13 +251,31 @@ othImg.addEventListener('mouseleave', function () {
     
 }
 
-var mapPopUp = document.getElementById('arkmoremap');
-const popUpImg = document.getElementById('arkmorepopup');
-mapPopUp.addEventListener('click', function () {
-    popUpImg.style.display = 'block';
-})
+try {
+    var akmapPopUp = document.getElementById('arkmoremap');
+    const akpopUpImg = document.getElementById('arkmorepopup');
+    akmapPopUp.addEventListener('click', function () {
+        akpopUpImg.style.display = 'block';
+    })
 
-popUpImg.addEventListener('click', function () {
-    popUpImg.style.display = 'none';
-})
+    akpopUpImg.addEventListener('click', function () {
+        akpopUpImg.style.display = 'none';
+    })
+} catch (TypeError) {
+    
+}
 
+try {
+    var ashmapPopUp = document.getElementById('ashariamap');
+    const ashpopUpImg = document.getElementById('ashariapopup');
+    ashmapPopUp.addEventListener('click', function () {
+        ashpopUpImg.style.display = 'block';
+    })
+
+    ashpopUpImg.addEventListener('click', function () {
+        ashpopUpImg.style.display = 'none';
+    })
+
+} catch (TypeError) {
+    
+}

@@ -298,3 +298,13 @@ h4 {
 .highlight:hover::before {
     height: 3vh;
 }
+
+@media (max-width: 950px) {
+    .sidenav {
+        display: none;
+    }
+
+    .submain {
+        margin-left: 0;
+    }
+}

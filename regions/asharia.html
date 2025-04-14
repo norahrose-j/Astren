@@ -13,7 +13,6 @@
                 <li class = "firstnav" style = "color:rgb(207, 207, 207);font-size:20px;">CONTENT</li><br>
                 <a class = "menAbstract sidebarentry" href="#abstract"><li><b>Abstract</b></li></a><br>
                 <a class = "menGeo sidebarentry" href="#geo"><li><b>Geography</b></li></a><br>
-                <a class = "menFeat sidebarentry" href="#feat"><li><b>Notable Features</b></li></a><br>
                 <a class = "menGov sidebarentry" href="#gov"><li><b>Governance</b></li></a><br>
                 <a class = "menCC sidebarentry" href="#cc"><li><b>Character Creation</b></li></a><br>
                 <a class = "menMap sidebarentry" href="#map"><li><b>Map</b></li></a><br>
@@ -690,9 +689,20 @@
 
 
         <header id = "ashariabar" class = "headerbar">
-            <button class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+            <button class="open-menu"><i class="fa-solid fa-ellipsis"></i></button>
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
             <button class="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
         </header>
+
+        <div class="collapse-menu">
+            <ul>
+                <a class = "menAbstract sidebarentry" href="#abstract"><li><b>Abstract</b></li></a><br>
+                <a class = "menGeo sidebarentry" href="#geo"><li><b>Geography</b></li></a><br>
+                <a class = "menGov sidebarentry" href="#gov"><li><b>Governance</b></li></a><br>
+                <a class = "menCC sidebarentry" href="#cc"><li><b>Character Creation</b></li></a><br>
+                <a class = "menMap sidebarentry" href="#map"><li><b>Map</b></li></a><br>
+            </ul>            
+        </div>
 
         <div class="nav-menu">
             <ul>

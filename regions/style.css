@@ -92,6 +92,19 @@ a {
     font-size: 23px;
 }
 
+.open-menu {
+    border-style: none;
+    font-family: 'TextBold';
+    transition: color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
+    color: #1c1c1c;
+    margin-left: 1.5vw;
+    font-size: 23px;
+    cursor: pointer;
+
+    display: none;
+}
+
 .close-menu-btn {
     border-style: none;
     font-family: 'TextBold';
@@ -114,6 +127,10 @@ a {
     text-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.292);
 }
 
+.fa-ellipsis:hover {
+    text-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.292);
+}
+
 .fa-xmark {
     transition: text-shadow 0.2s ease;
     transition: all 0.5s ease;
@@ -122,6 +139,31 @@ a {
 .fa-xmark:hover {
     text-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.292);
     cursor: pointer;
+}
+
+.collapse-menu {
+    position: fixed;
+    top: 7vh;
+    left: 1.5vw;
+    background-color: #fff;
+    width: 250px;
+    z-index: 5;
+    padding-bottom: 2vh;
+
+    border-style: solid;
+    border-color: #d2d2d2;
+    border-width: 3px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.292);
+
+    display: none;
+}
+
+.collapse-menu ul {
+    list-style-type: none;
+}
+
+.collapse-menu li {
+    margin-top: 2vh;
 }
   
 .nav-menu {
@@ -169,7 +211,7 @@ a {
 .sidenav {
     background-color: #F4F3F3;
     color: rgb(28, 28, 28);
-    width:17vw;
+    width: 250px;;
     height: 100%;
     position: fixed;
     overflow: auto;
@@ -224,12 +266,12 @@ a {
 
 .table table {
     border-collapse: collapse;
-    width: 10vw;
     padding: 0;
     margin-left: 3vw;
     margin-bottom: 2vh;
     margin-top: 10vh;
     float: right;
+    width: 300px;
 }
 
 .table table tr p {
@@ -271,7 +313,7 @@ tr:nth-child(odd) {
 .topimg {
    margin: 0;
    padding: 0;
-   width: 20vw;
+   width: 300px;
 }
 
 .flag {
@@ -279,7 +321,7 @@ tr:nth-child(odd) {
 }
 
 .flag img {
-    width: 7vw;
+    width: 120px;
     padding: 0.5vh;
 }
 
@@ -295,7 +337,7 @@ tr:nth-child(odd) {
 }
 
 .crest img {
-    width: 5vw;
+    width: 75px;
     padding: 0.5vh;
 }
 
@@ -306,7 +348,7 @@ tr:nth-child(odd) {
 }
 
 table .map {
-    width: 20vw;
+    width: 300px;
 }
 
 /* MAIN BODY */
@@ -315,7 +357,7 @@ table .map {
     color: rgb(28, 28, 28);
     z-index: 100;
     box-shadow:0;
-    margin-left: 17vw;
+    margin-left: 250px;
     padding-top: 0.5vh;
     padding-bottom: 8vh;
     padding-right: 5vw;
@@ -366,7 +408,7 @@ h4 {
 
 .ccimg {
     float: right;
-    width: 12vw;
+    width: 200px;
     margin-top: 5vh;
     margin-bottom: 2vh;
     margin-left: 3vw;
@@ -452,7 +494,7 @@ a {
 }
 
 .geogimg {
-    width: 13vw;
+    width: 200px;
 }
 
 .mainmap {
@@ -521,6 +563,10 @@ a {
     width: 75vw;
 }
 
+#ashariaimgpp {
+    width: 52vw;
+}
+
 /* TABLE */
 .text table {
     float: none;
@@ -556,4 +602,38 @@ table .desctext {
     text-wrap: wrap;
     text-align: center;
     padding: 3vw;
+}
+
+@media (max-width: 1000px) {
+    .sidenav {
+        display: none;
+    }
+
+    .submain {
+        margin-left: 0;
+    }
+
+    .text table .crest {
+        width: 15vw;
+    }
+    
+    table .housename {
+        width: 20vw;
+    }
+    
+    table .housedesc {
+        width: 60vw;
+    }
+
+    #ashariamap {
+        width: 40vw;
+    }
+
+    .open-menu {
+        display: block;
+    }
+
+    .headerbar {
+        justify-content: space-between;
+    }
 }
