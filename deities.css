@@ -194,7 +194,7 @@ main {
 }
 
 .godsimages {
-    width: 15%;
+    width: 14%;
 }
 
 .slideicon {
@@ -232,7 +232,7 @@ main {
     position: absolute;
     z-index: 5;
     top: 80vh;
-    left: 15vw;
+    width: 100vw;
 }
 
 h1 {
@@ -244,8 +244,8 @@ h1 {
 }
 
 .next {
-    background-color: #5f9ea000;
-    color: cadetblue;
+    background-color: #1c1c1c27;
+    color: #2d2d2d;
     border-color: rgba(0, 0, 0, 0);
     border-style: solid;
     border-radius: 50%;
@@ -260,7 +260,8 @@ h1 {
     cursor: pointer;
     position: absolute;
 
-    top: 45%
+    top: 45%;
+    transition: all 0.2s ease;
 }
 
 #leftNext {
@@ -272,6 +273,7 @@ h1 {
 }
 
 .next:hover {
+    color: cadetblue;
     background-color: #5f9ea04e; 
 }
 
@@ -296,9 +298,11 @@ h1 {
 
 @keyframes slideIn {
     from {
-        padding-top: 100vh;
+        /* padding-top: 50vh; */
+        opacity: 0.5;
     }
     to {
-        padding-top: 10vh;
+        /* padding-top: 10vh; */
+        opacity: 1;
     }
 }

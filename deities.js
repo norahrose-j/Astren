@@ -11,10 +11,18 @@ const daghdaIcon = document.getElementById('daghdaIcon');
 const lughIcon = document.getElementById('lughIcon');
 const dunatisIcon = document.getElementById('dunatisIcon');
 const mathonwyIcon = document.getElementById('mathonwyIcon');
+const maclirIcon = document.getElementById('maclirIcon');
 const machaIcon = document.getElementById('machaIcon');
 const silvanusIcon = document.getElementById('silvanusIcon');
 const oghmaIcon = document.getElementById('oghmaIcon');
 const belenusIcon = document.getElementById('belenusIcon');
+const nuadaIcon = document.getElementById('nuadaIcon');
+const diancechtIcon = document.getElementById('diancechtIcon');
+const arawnIcon = document.getElementById('arawnIcon');
+const goibniuIcon = document.getElementById('goibniuIcon');
+const cailleachIcon = document.getElementById('cailleachIcon');
+const aengusIcon = document.getElementById('aengusIcon');
+const donnIcon = document.getElementById('donnIcon');
 
 let deities = [];
 deities.push(daghdaIcon);
@@ -22,10 +30,243 @@ deities.push(morIcon);
 deities.push(lughIcon)
 deities.push(dunatisIcon);
 deities.push(mathonwyIcon);
+deities.push(maclirIcon)
 deities.push(machaIcon)
 deities.push(silvanusIcon);
-deities.push(oghmaIcon)
-deities.push(belenusIcon)
+deities.push(oghmaIcon);
+deities.push(belenusIcon);
+deities.push(nuadaIcon);
+deities.push(diancechtIcon);
+deities.push(arawnIcon);
+deities.push(goibniuIcon)
+deities.push(cailleachIcon);
+deities.push(aengusIcon);
+deities.push(donnIcon)
+
+donnIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const donnSlide = document.getElementById('donn');
+    donnSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    donnIcon.classList.add('iconClicked');
+});
+
+aengusIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const aengusSlide = document.getElementById('aengus');
+    aengusSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    aengusIcon.classList.add('iconClicked');
+});
+
+cailleachIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const cailleachSlide = document.getElementById('cailleach');
+    cailleachSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    cailleachIcon.classList.add('iconClicked');
+});
+
+goibniuIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const goibniuSlide = document.getElementById('goibniu');
+    goibniuSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    goibniuIcon.classList.add('iconClicked');
+});
+
+arawnIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const arawnSlide = document.getElementById('arawn');
+    arawnSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    arawnIcon.classList.add('iconClicked');
+});
+
+diancechtIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const diancechtSlide = document.getElementById('diancecht');
+    diancechtSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    diancechtIcon.classList.add('iconClicked');
+});
+
+nuadaIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const nuadaSlide = document.getElementById('nuada');
+    nuadaSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    nuadaIcon.classList.add('iconClicked');
+});
+
+belenusIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const belenusSlide = document.getElementById('belenus');
+    belenusSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    belenusIcon.classList.add('iconClicked');
+});
+
+oghmaIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const oghmaSlide = document.getElementById('oghma');
+    oghmaSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    oghmaIcon.classList.add('iconClicked');
+});
+
+silvanusIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const silvanusSlide = document.getElementById('silvanus');
+    silvanusSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    silvanusIcon.classList.add('iconClicked');
+});
+
+machaIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const machaSlide = document.getElementById('macha');
+    machaSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    machaIcon.classList.add('iconClicked');
+});
+
+maclirIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const maclirSlide = document.getElementById('maclir');
+    maclirSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    maclirIcon.classList.add('iconClicked');
+});
+
+mathonwyIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const mathonwySlide = document.getElementById('mathonwy');
+    mathonwySlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    mathonwyIcon.classList.add('iconClicked');
+});
+
+dunatisIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const dunatisSlide = document.getElementById('dunatis');
+    dunatisSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    dunatisIcon.classList.add('iconClicked');
+});
+
+lughIcon.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.add('hidden');
+    }
+
+    const lughSlide = document.getElementById('lugh');
+    lughSlide.classList.remove('hidden');
+
+    for (let i = 0; i < deities.length; i++) {
+        deities[i].classList.remove('iconClicked')        
+    }
+
+    lughIcon.classList.add('iconClicked');
+});
 
 morIcon.addEventListener('click', function () {
     for (let i = 0; i < slides.length; i++) {
