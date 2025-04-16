@@ -9,9 +9,14 @@ try {
         const menuBtn = menuBtns[i];
         
         menuBtn.addEventListener('click', function () {
-            menus[i].style.visibility = 'visible';
+            menus[i].style.height = '100%';
             menuBtn.style.display = 'none';
             xmarks[i].style.display = 'block';
+
+            for (let i = 0; i < opens.length; i++) {
+                const openBtn = opens[i];
+                openBtn.style.display = 'none';
+            }
         })
     }
 
@@ -19,9 +24,14 @@ try {
         const xmark = xmarks[i];
         
         xmark.addEventListener('click', function () {
-            menus[i].style.visibility = 'hidden';
+            menus[i].style.height = '0%';
             menuBtns[i].style.display = 'block';
             xmark.style.display = 'none';
+
+            for (let i = 0; i < opens.length; i++) {
+                const openBtn = opens[i];
+                openBtn.style.display = 'block';
+            }
         })
     }
 

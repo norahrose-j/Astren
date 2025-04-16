@@ -363,10 +363,10 @@ try {
         const menuBtn = menuBtns[i];
         
         menuBtn.addEventListener('click', function () {
-            menus[i].style.visibility = 'visible';
+            menus[i].style.height = '100%';
             menuBtn.style.display = 'none';
             xmarks[i].style.display = 'block';
-            text.style.color = '#fff';
+            text.style.visibility = 'hidden';
 
             for (let i = 0; i < opens.length; i++) {
                 const openBtn = opens[i];
@@ -379,10 +379,10 @@ try {
         const xmark = xmarks[i];
         
         xmark.addEventListener('click', function () {
-            menus[i].style.visibility = 'hidden';
+            menus[i].style.height = '0%';
             menuBtns[i].style.display = 'block';
             xmark.style.display = 'none';
-            text.style.color = '#1c1c1c'
+            text.style.visibility = 'visible';
 
             for (let i = 0; i < opens.length; i++) {
                 const openBtn = opens[i];
