@@ -8,10 +8,24 @@ for (let i = 1; i < slides.length; i++) {
 // show slides when icon clicked
 const morIcon = document.getElementById('morriganIcon');
 const daghdaIcon = document.getElementById('daghdaIcon');
+const lughIcon = document.getElementById('lughIcon');
+const dunatisIcon = document.getElementById('dunatisIcon');
+const mathonwyIcon = document.getElementById('mathonwyIcon');
+const machaIcon = document.getElementById('machaIcon');
+const silvanusIcon = document.getElementById('silvanusIcon');
+const oghmaIcon = document.getElementById('oghmaIcon');
+const belenusIcon = document.getElementById('belenusIcon');
 
 let deities = [];
 deities.push(daghdaIcon);
 deities.push(morIcon);
+deities.push(lughIcon)
+deities.push(dunatisIcon);
+deities.push(mathonwyIcon);
+deities.push(machaIcon)
+deities.push(silvanusIcon);
+deities.push(oghmaIcon)
+deities.push(belenusIcon)
 
 morIcon.addEventListener('click', function () {
     for (let i = 0; i < slides.length; i++) {
