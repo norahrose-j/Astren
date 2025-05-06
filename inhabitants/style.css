@@ -216,14 +216,11 @@ a {
     margin-top: 2.5vh;
 }
 
-.sidenav ul li {
-    margin-top: 3vh;
-}
-
 .sidebarentry {
     position: relative;
     display: inline-block;
     z-index: 5;
+    margin-top: 3vh;
     
     transition: all 0.5s ease;
 }
