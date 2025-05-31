@@ -212,19 +212,26 @@ main {
     height: 50px;
     cursor: pointer;
     margin: 1vh;
+    padding: 0.5vh;
+
+    border-color: #5f9ea0;
+    background-color: #5f9ea02d;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
     
-    padding-top: 7vh;
+    margin-top: 7vh;
     transition: all 0.5s ease;
 }
 
 .icon:hover {
-    padding-top: 5vh;
-    padding-bottom: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 }
 
 .iconClicked {
-    padding-top: 5vh;
-    padding-bottom: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
 }
 
 #icons {
@@ -324,18 +331,18 @@ h1 {
     }
 
     .icon {
-        padding-top: 3vh;
+        margin-top: 3vh;
         transition: all 0.5s ease;
     }
 
     .icon:hover {
-        padding-top: 1vh;
-        padding-bottom: 2vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
 
     .iconClicked {
-        padding-top: 1vh;
-        padding-bottom: 2vh;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
     
 }
