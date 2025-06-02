@@ -96,12 +96,16 @@ a {
 #headtexttop {
     font-family: 'Heading';
     font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.588);
 }
 
 #headtextbottom {
     font-family: 'Script';
     font-size: 130px;
     margin-top: -5vh;
+    color: #fff;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.588);
 }
 
 .fa-chevron-down {
