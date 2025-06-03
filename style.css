@@ -162,6 +162,8 @@ a {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.588);
+    color: #eae5e5;
 }
 
 .fa-bars:hover {
