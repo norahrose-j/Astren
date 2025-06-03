@@ -1,4 +1,7 @@
-// hide slides by default
+// DEITIES SLIDES
+
+try {
+    // hide slides by default
 var slides = document.getElementsByClassName('slides');
 
 for (let i = 1; i < slides.length; i++) {
@@ -349,6 +352,10 @@ prevImg.addEventListener('click', function () {
     slides[index].classList.remove('hidden');
     deities[index].classList.add('iconClicked');
 })
+} catch (TypeError) {
+    
+}
+
 
 
 // OPEN/CLOSE MENU
@@ -356,7 +363,8 @@ try {
     const menuBtns = document.getElementsByClassName('menu-btn');
     const xmarks = document.getElementsByClassName('close-menu-btn');
     const menus = document.getElementsByClassName('nav-menu');
-    const text = document.getElementById('headertext');
+    const opens = document.getElementsByClassName('fa-ellipsis');
+    const texts = document.getElementsByClassName('headertext');
 
 
     for (let i = 0; i < menuBtns.length; i++) {
@@ -366,7 +374,7 @@ try {
             menus[i].style.height = '100%';
             menuBtn.style.display = 'none';
             xmarks[i].style.display = 'block';
-            text.style.visibility = 'hidden';
+            texts[i].style.visibility = 'hidden';
 
             for (let i = 0; i < opens.length; i++) {
                 const openBtn = opens[i];
@@ -382,12 +390,29 @@ try {
             menus[i].style.height = '0%';
             menuBtns[i].style.display = 'block';
             xmark.style.display = 'none';
-            text.style.visibility = 'visible';
+            texts[i].style.visibility = 'visible';
 
             for (let i = 0; i < opens.length; i++) {
                 const openBtn = opens[i];
                 openBtn.style.display = 'block';
             }
+        })
+    }
+
+    const collapseMenus = document.getElementsByClassName('collapse-menu');
+
+
+    for (let i = 0; i < opens.length; i++) {
+        const openBtn = opens[i];
+        
+        openBtn.addEventListener('click', function () {
+            openBtn.classList.toggle('clicked-ellipsis');
+
+            if (collapseMenus[i].style.display === 'block') {
+                collapseMenus[i].style.display = 'none';
+            } else {
+                collapseMenus[i].style.display = 'block';
+            }           
         })
     }
 
