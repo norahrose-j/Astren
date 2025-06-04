@@ -167,12 +167,12 @@ a {
 }
 
 
-/* MAIN PAGE BODY CONTENT */
 main {
     background-color: rgb(255, 255, 255);
     color: rgb(28, 28, 28);
 }
 
+/* DEITIES PAGE BODY CONTENT */
 .slides {
     text-align: center;
 
@@ -346,3 +346,96 @@ h1 {
     }
     
 }
+
+/* HISTORY PAGE BODY CONTENT */
+
+/* timeline */
+#timeline {
+    display: flex;
+    flex-wrap: nowrap;
+
+    margin-top: 15vh;
+    justify-content: center;
+}
+
+.timesection {
+    text-align: center;
+}
+
+#first {
+    height: 3vh;
+    width: 25vw;
+    background-color: #5f9ea0a2;
+    margin-bottom: 1vh;
+
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#first:hover {
+    height: 6vh;
+}
+
+#second {
+    height: 3vh;
+    width: 25vw;
+    background-color: #5f9ea0;
+    margin-bottom: 1vh;
+
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#second:hover {
+    height: 6vh;
+}
+
+#third {
+    height: 3vh;
+    width: 25vw;
+    background-color: #3e6668;
+    margin-bottom: 1vh;
+
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#third:hover {
+    height: 6vh;
+}
+
+.clickedsection {
+    height: 6vw;
+}
+
+.clickedtext {
+    font-family: TextBold;
+}
+
+/* navigation */
+
+nav {
+    background-color: #f4f4f4;
+    width: 20vw;
+
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #1c1c1c;
+}
+
+
+/* body text first */
+
+
+/* body text second */
+
+
+/* body text third */
