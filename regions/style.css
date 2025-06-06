@@ -55,33 +55,6 @@ a {
     font-family: 'TextBold';
 }
 
-/*
-
-.ashariabar {
-    background-image: url(../images/asharia/ashariabar.jpg);
-    background-size: cover;
-}
-
-.arkmorebar {
-    background-image: url(../images/arkmore/arkmorehead.jpg);
-    background-size: cover;
-}
-
-.kinemorebar {
-    background-image: url(../images/kinemore/kinemorehead.png);
-    background-size: cover;
-}
-
-.othbar {
-    background-image: url(../images/oth/othbar.jpg);
-    background-size: cover;
-}
-
-.kidetabar {
-    background-image: url(../images/kideta/kidetabar.jpg);
-    background-size: cover;
-} */
-
 .menu-btn {
     border-style: none;
     font-family: 'TextBold';
@@ -119,19 +92,14 @@ a {
 
 .fa-bars {
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1.5vh;
 }
 
 .fa-bars:hover {
     background-color: #5f9ea054;
     border-color: rgba(0, 0, 0, 0);
     color: #5f9ea0;
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
 
 .fa-xmark {
@@ -148,9 +116,7 @@ a {
     background-color: #5f9ea054; 
     color: #5f9ea0;
     border-color: #1c1c1100;
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
 
 .collapse-menu {
@@ -195,18 +161,14 @@ a {
     background-color: #5f9ea054; 
     color: #5f9ea0;
     border-color: #1c1c1100;
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
 
 .clicked-ellipsis {
     background-color: #5f9ea054; 
     color: #5f9ea0;
     border-color: #1c1c1100;
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
   
 .nav-menu {

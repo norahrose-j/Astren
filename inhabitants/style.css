@@ -80,19 +80,14 @@ a {
 
 .fa-bars {
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1.5vh;
 }
 
 .fa-bars:hover {
     background-color: #5f9ea054;
     color: #5f9ea0;
     border-color: rgba(0, 0, 0, 0);
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
 
 .fa-xmark {
@@ -109,9 +104,7 @@ a {
     background-color: #5f9ea054; 
     color: #5f9ea0;
     border-color: #1c1c1100;
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
 
 .open-menu {
@@ -152,8 +145,28 @@ a {
     margin-top: 2vh;
 }
 
+.fa-ellipsis {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
 .fa-ellipsis:hover {
-    text-shadow: 0px 2px 2.5px rgba(0, 0, 0, 0.292);
+    background-color: #5f9ea054; 
+    color: #5f9ea0;
+    border-color: #1c1c1100;
+    border-radius: 50%;
+}
+
+.clicked-ellipsis {
+    background-color: #5f9ea054; 
+    color: #5f9ea0;
+    border-color: #1c1c1100;
+    border-radius: 50%;
 }
   
 .nav-menu {

@@ -78,19 +78,14 @@ a {
 
 .fa-bars {
     cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1.5vh;
 }
 
 .fa-bars:hover {
     background-color: #5f9ea054;
     color: #5f9ea0;
     border-color: rgba(0, 0, 0, 0);
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
 
 .fa-xmark {
@@ -107,9 +102,7 @@ a {
     background-color: #5f9ea054; 
     color: #5f9ea0;
     border-color: #1c1c1100;
-    border-style: solid;
     border-radius: 50%;
-    border-width: 0.1px;
 }
   
 .nav-menu {
