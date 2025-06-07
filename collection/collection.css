@@ -198,6 +198,8 @@ h1 {
     border-style: none;
     box-shadow: 5px 5px 5px #1c1c1175;
     transition: all 0.5s ease;
+
+    cursor: pointer;
 }
 
 .filterbutton:hover {
@@ -300,7 +302,7 @@ h2 {
     margin-bottom: auto;
     font-size: 30px;
 
-    color: #818181;
+    color: #292929;
     margin-left: auto;
     margin-right: 2vw;
 
@@ -383,4 +385,15 @@ ul {
     list-style-type: square;
     padding-left: 20px;
     margin-left: 0%;
+}
+
+@media (max-width: 1000px) {
+    .filterbutton {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    table {
+        font-size: 13px;
+    }
 }
