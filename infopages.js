@@ -356,8 +356,6 @@ prevImg.addEventListener('click', function () {
     
 }
 
-
-
 // OPEN/CLOSE MENU
 try {
     const menuBtns = document.getElementsByClassName('menu-btn');
@@ -418,4 +416,40 @@ try {
 
 } catch (TypeError) {
 
+}
+
+// TIMELINE CLICK
+try {
+    const firstSection = document.getElementById('first');
+    const secondSection = document.getElementById('second');
+    const thirdSection = document.getElementById('third');
+
+    // change appearance on click
+    firstSection.addEventListener('click', function () {
+        firstSection.classList.add('clickedsection');
+
+        // unclick other sections
+        secondSection.classList.remove('clickedsection');
+        thirdSection.classList.remove('clickedsection');
+    })
+
+    secondSection.addEventListener('click', function () {
+        secondSection.classList.add('clickedsection');
+
+        // unclick other sections
+        firstSection.classList.remove('clickedsection');
+        thirdSection.classList.remove('clickedsection');
+    })
+
+    thirdSection.addEventListener('click', function () {
+        thirdSection.classList.add('clickedsection');
+
+        // unclick other sections
+        secondSection.classList.remove('clickedsection');
+        firstSection.classList.remove('clickedsection');
+    })
+
+
+} catch (TypeError) {
+    
 }
