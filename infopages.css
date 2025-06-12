@@ -427,10 +427,13 @@ nav a {
 }
 
 
-/* body text first */
-#textfirst {
-    margin-left: 5vw;
-    margin-right: 5vw;
+/* body text general  */
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
 }
 
 h2 {
@@ -447,13 +450,6 @@ h3 {
     font-size: 30px;
 }
 
-#textfirst p { 
-    margin-left: 20vw;
-    margin-bottom: 5vh;
-
-    font-size: 18px;
-}
-
 hr {
     margin-left: 22vw;
     margin-right: 1vw;
@@ -462,7 +458,40 @@ hr {
     color: #f4f3f350;
 }
 
-/* body text second */
 
+/* body text first */
+#textfirst {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#textfirst p { 
+    margin-left: 20vw;
+    margin-bottom: 5vh;
+
+    font-size: 18px;
+}
+
+/* body text second */
+#textsecond {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#textsecond p { 
+    margin-left: 20vw;
+    margin-bottom: 5vh;
+}
+    
 
 /* body text third */
+#textthird {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#textthird p { 
+    margin-left: 20vw;
+    margin-bottom: 5vh;
+}
+    

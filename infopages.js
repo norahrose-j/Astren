@@ -424,6 +424,10 @@ try {
     const secondSection = document.getElementById('second');
     const thirdSection = document.getElementById('third');
 
+    const firstText = document.getElementById('textfirst');
+    const secondText = document.getElementById('textsecond');
+    const thirdText = document.getElementById('textthird');
+
     // change appearance on click
     firstSection.addEventListener('click', function () {
         firstSection.classList.add('clickedsection');
@@ -431,6 +435,17 @@ try {
         // unclick other sections
         secondSection.classList.remove('clickedsection');
         thirdSection.classList.remove('clickedsection');
+
+        // show text
+        firstText.classList.add('shown');
+        firstText.classList.remove('hidden');
+
+        // hide other texts
+        secondText.classList.remove('shown');
+        secondText.classList.add('hidden');
+
+        thirdText.classList.remove('shown');
+        thirdText.classList.add('hidden');
     })
 
     secondSection.addEventListener('click', function () {
@@ -439,6 +454,17 @@ try {
         // unclick other sections
         firstSection.classList.remove('clickedsection');
         thirdSection.classList.remove('clickedsection');
+
+        // show text
+        secondText.classList.add('shown');
+        secondText.classList.remove('hidden');
+
+        // hide other texts
+        firstText.classList.remove('shown');
+        firstText.classList.add('hidden');
+
+        thirdText.classList.remove('shown');
+        thirdText.classList.add('hidden');
     })
 
     thirdSection.addEventListener('click', function () {
@@ -447,6 +473,17 @@ try {
         // unclick other sections
         secondSection.classList.remove('clickedsection');
         firstSection.classList.remove('clickedsection');
+
+        // show text
+        thirdText.classList.add('shown');
+        thirdText.classList.remove('hidden');
+
+        // hide other texts
+        firstText.classList.remove('shown');
+        firstText.classList.add('hidden');
+
+        secondText.classList.remove('shown');
+        secondText.classList.add('hidden');
     })
 
 
