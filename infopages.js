@@ -424,6 +424,10 @@ try {
     const secondSection = document.getElementById('second');
     const thirdSection = document.getElementById('third');
 
+    const firstDesc = document.getElementById('firsttext');
+    const secondDesc = document.getElementById('secondtext');
+    const thirdDesc = document.getElementById('thirdtext');
+
     const firstText = document.getElementById('textfirst');
     const secondText = document.getElementById('textsecond');
     const thirdText = document.getElementById('textthird');
@@ -432,9 +436,14 @@ try {
     firstSection.addEventListener('click', function () {
         firstSection.classList.add('clickedsection');
 
+        firstDesc.classList.add('clickedtext');
+
         // unclick other sections
         secondSection.classList.remove('clickedsection');
         thirdSection.classList.remove('clickedsection');
+
+        secondDesc.classList.remove('clickedtext');
+        thirdDesc.classList.remove('clickedtext');
 
         // show text
         firstText.classList.add('shown');
@@ -450,10 +459,15 @@ try {
 
     secondSection.addEventListener('click', function () {
         secondSection.classList.add('clickedsection');
+        
+        secondDesc.classList.add('clickedtext');
 
         // unclick other sections
         firstSection.classList.remove('clickedsection');
         thirdSection.classList.remove('clickedsection');
+
+        firstDesc.classList.remove('clickedtext');
+        thirdDesc.classList.remove('clickedtext');
 
         // show text
         secondText.classList.add('shown');
@@ -470,9 +484,14 @@ try {
     thirdSection.addEventListener('click', function () {
         thirdSection.classList.add('clickedsection');
 
+        thirdDesc.classList.add('clickedtext');
+
         // unclick other sections
         secondSection.classList.remove('clickedsection');
         firstSection.classList.remove('clickedsection');
+
+        secondDesc.classList.remove('clickedtext');
+        firstDesc.classList.remove('clickedtext');
 
         // show text
         thirdText.classList.add('shown');

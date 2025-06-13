@@ -356,7 +356,10 @@ h1 {
 }
 
 .timesection {
-    text-align: center;
+    text-align: center;    
+    color: #1c1c1c7c;
+
+    transition: all 0.5s ease;
 }
 
 .timesection p {
@@ -401,7 +404,7 @@ h1 {
 }
 
 .clickedtext {
-    font-family: TextBold;
+    color: #1c1c1c;
 }
 
 /* navigation */
