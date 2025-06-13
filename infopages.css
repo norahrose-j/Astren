@@ -492,6 +492,8 @@ hr {
 #textsecond p { 
     margin-left: 20vw;
     margin-bottom: 5vh;
+
+    font-size: 18px;
 }
     
 
@@ -504,5 +506,7 @@ hr {
 #textthird p { 
     margin-left: 20vw;
     margin-bottom: 5vh;
+
+    font-size: 18px;
 }
     
