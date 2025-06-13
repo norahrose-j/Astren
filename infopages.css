@@ -370,37 +370,18 @@ h1 {
     height: 3vh;
     width: 30vw;
     margin-bottom: 1vh;
+    background-color: #5f9ea0a2;
 
     transition: all 0.5s ease;
     cursor: pointer;
 }
 
-#first {
-    background-color: #5f9ea0a2;
-}
-
-#first:hover {
-    height: 6vh;
-}
-
-#second {
-    background-color: #5f9ea0;
-}
-
-#second:hover {
-    height: 6vh;
-}
-
-#third {
-    background-color: #3e6668;
-}
-
-#third:hover {
+.sectioncolour:hover {
     height: 6vh;
 }
 
 .clickedsection {
-    height: 6vh;
+    background-color: #5f9ea0;
 }
 
 .clickedtext {
