@@ -362,6 +362,10 @@ h1 {
     transition: all 0.5s ease;
 }
 
+.timesection:hover {
+    color: #1c1c1c;
+}
+
 .timesection p {
     transition: all 0.5s ease;
 }
@@ -394,7 +398,6 @@ nav {
     background-color: #f4f4f4;
     width: 15vw;
     padding: 1vh;
-
     position: fixed;
 }
 
