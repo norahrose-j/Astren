@@ -16,6 +16,11 @@
 }
 
 @font-face {
+    font-family: TextLight;
+    src: url(../fonts/CormorantGaramond-Light.ttf);
+}
+
+@font-face {
     font-family: TextItalic;
     src: url(../fonts/CormorantGaramond-Italic.ttf);
 }
@@ -319,6 +324,14 @@ h4 {
 
 .italic {
     font-family: TextItalic;
+}
+
+.light {
+    font-family: TextLight;
+}
+
+.spell {
+    padding-left: 5%    ;
 }
 
 .imgcontainer {

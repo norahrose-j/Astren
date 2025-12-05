@@ -255,6 +255,10 @@ main {
     display: none;
 }
 
+.hideFeatEntry {
+    display: none;
+}
+
 .hidebackgEntry {
     display: none;
 }
@@ -284,6 +288,13 @@ h2 {
 }
 
 .entryheader .fa-wand-sparkles {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+}
+
+.entryheader .fa-hand-fist {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
