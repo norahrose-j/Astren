@@ -281,7 +281,7 @@ h2 {
     color: #2d3016;
 }
 
-.entryheader .fa-person {
+.entryheader .fa-user {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 2vw;
@@ -300,6 +300,14 @@ h2 {
     margin-bottom: auto;
     margin-left: 2vw;
 }
+
+.entryheader .fa-shield-halved {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+}
+
 
 .entryheader .fa-book-bookmark {
     display: block;
@@ -342,6 +350,26 @@ p {
 /* STATBLOCK FORMATTING */
 .title {
     font-size: 23px;
+}
+
+.equip table {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 0%;
+    text-align: center;
+    
+    width: 65vw;
+    background-color: #dfdfdf;
+}
+
+.header {
+    background-color: #d0d0d0;
+}
+
+.equip td {
+    width: 13vw;
+    padding:1vw;
 }
 
 table {
@@ -441,5 +469,9 @@ footer {
 
     table {
         font-size: 13px;
+    }
+
+    .equip table {
+        font-size: 15px;
     }
 }
