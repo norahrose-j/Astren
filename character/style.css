@@ -1,0 +1,49 @@
+
+
+@font-face {
+    font-family: Script;
+    src: url(fonts/Sail-Regular.ttf);
+}
+
+@font-face {
+    font-family: Text;
+    src: url(fonts/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: TextBold;
+    src: url(fonts/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: TextItalic;
+    src: url(fonts/CormorantGaramond-Italic.ttf);
+}
+
+@font-face {
+    font-family: Heading;
+    src: url(fonts/Italiana-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Text';
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    font-size: 17px;
+    background-color: #fff;
+}
+
+
+p {
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+}
