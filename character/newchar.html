@@ -3,11 +3,131 @@
   <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="" href="style.css">
-    <title>Astren</title>
+    <title>Astren | New Character</title>
     <script src="https://kit.fontawesome.com/84c7f98808.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
+        <div class = "decisions">
+            <h1>NEW CHARACTER</h1>
+            <input type="textarea" name="Name" id="charName" value="">
+          
+            <div id="races">
+                <h2>Species</h2>
+                <h3>High Elf</h3>
+                <p>
+                    If you hit a creature with a melee attack roll 
+                    using this weapon, you can make a melee attack roll with the weapon against a second 
+                    creature within 5 feet of the first that is also within your reach. On a hit, the 
+                    second creature takes the weapon's damage.
+                </p>
+                <div class = "selection">
+                    <button id="highelfsel" class="select">SELECT</button>
+                    <button id="highelfdes" class="deselect">DESELECT</button>
+                </div>
+                <div class = 'details' id="highElfDetails">
+                    <p>
+                    You receive darkvision with 60ft. Your fey lineage grants you access to to the 
+                    Prestidigitation cantrip, and at 3rd and 5th levels you gain access to 
+                    Detect Magic and Misty Step, respectively.
+                    </p>
+                    <p>
+                        Choose one of: <span class = "skillselectspec insight">Insight</span>, 
+                        <span class = "skillselectspec perception">Perception</span> 
+                        or <span class = "skillselectspec survival">Survival</span>
+                    </p>
+                </div>        
+            </div>
+            
+            <div id="classes">
+                <h2>Class</h2>
+
+                <h3>Fighter</h3>
+                <p>
+                    If you hit a creature with a melee attack roll 
+                    using this weapon, you can make a melee attack roll with the weapon against a second 
+                    creature within 5 feet of the first that is also within your reach. On a hit, the 
+                    second creature takes the weapon's damage.
+                </p>
+            </div>
+        </div>
+
+        <div class = "sheet">
+            <h2 id="charname"></h2>
+            <p>Level <span id="level"></span> <span id="species"></span> <span id="class"></span></p>
+            <p id="backg"></p>
+
+            <!-- stats -->
+             <table class = 'stats'>
+                <tr>
+                    <th>Strength</th>
+                    <th>Dexterity</th>
+                    <th>Constitution</th>
+                    <th>Intelligence</th>
+                    <th>Wisdom</th>
+                    <th>Charisma</th>
+                </tr>
+
+                <tr>
+                    <td class="abmodifier" id="strmod"></td>
+                    <td class="abmodifier" id="dexmod"></td>
+                    <td class="abmodifier" id="conmod"></td>
+                    <td class="abmodifier" id="intmod"></td>
+                    <td class="abmodifier" id="wismod"></td>
+                    <td class="abmodifier" id="chamod"></td>
+                </tr>
+        
+                <tr>
+                    <td class="abscore" id="str"></td>
+                    <td class="abscore" id="dex"></td>
+                    <td class="abscore" id="con"></td>
+                    <td class="abscore" id="int"></td>
+                    <td class="abscore" id="wis"></td>
+                    <td class="abscore" id="cha"></td>
+                </tr>
+
+                <tr>
+                    <td class="saving">Saving Throw</td>
+                    <td class="saving">Saving Throw</td>
+                    <td class="saving">Saving Throw</td>
+                    <td class="saving">Saving Throw</td>
+                    <td class="saving">Saving Throw</td>
+                    <td class="saving">Saving Throw</td>
+                </tr>
+
+                <tr>
+                    <td class="savscore" id="dexsave"></td>
+                    <td class="savscore" id="strsave"></td>
+                    <td class="savscore" id="consave"></td>
+                    <td class="savscore" id="intsave"></td>
+                    <td class="savscore" id="wissave"></td>
+                    <td class="savscore" id="chasave"></td>
+                </td>
+            </table>
+                <div>
+                        <div class = "skilllist">
+                        <ul>
+                        <li id="athletics">Athletics</li>
+                            <li>Arcana <span class = "bold" id="arcana"></span></li>
+                            <li>History <span class = "bold" id="history"></span></li>
+                            <li>Investigation <span class = "bold" id="investigation"></span></li>
+                            <li>Nature <span class = "bold" id="nature"></span></li>
+                            <li>Religion <span class = "bold" id="religion"></span></li>
+                            <li>Animal Handling <span class = "bold" id="animalhandling"></span></li>
+                            <li>Insight <span class = "bold" id="insight"></span></li>
+                            <li>Medicine <span class = "bold" id="medicine"></span></li>
+                            <li>Perception <span class = "bold" id="perception"></span></li>
+                            <li>Survival <span class = "bold" id="survival"></span></li>
+                            <li>Deception <span class = "bold" id="deception"></span></li>
+                            <li>Intimidation <span class = "bold" id="intimidation"></span></li>
+                            <li>Performance <span class = "bold" id="performance"></span></li>
+                            <li>Persuasion <span class = "bold" id="persuasion"></span></li>
+                        </ul>
+                        </div>
+                </div>
+        </div>
+
+
     
         <script src="main.js"></script> 
     </body>

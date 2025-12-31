@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: Script;
-    src: url(fonts/Sail-Regular.ttf);
+    src: url(../fonts/Sail-Regular.ttf);
 }
 
 @font-face {
     font-family: Text;
-    src: url(fonts/CormorantGaramond-Regular.ttf);
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
 }
 
 @font-face {
     font-family: TextBold;
-    src: url(fonts/CormorantGaramond-Bold.ttf);
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
 }
 
 @font-face {
     font-family: TextItalic;
-    src: url(fonts/CormorantGaramond-Italic.ttf);
+    src: url(../fonts/CormorantGaramond-Italic.ttf);
 }
 
 @font-face {
     font-family: Heading;
-    src: url(fonts/Italiana-Regular.ttf);
+    src: url(../fonts/Italiana-Regular.ttf);
 }
 
 html {
@@ -36,6 +36,9 @@ body {
     height: 100%;
     font-size: 17px;
     background-color: #fff;
+
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
@@ -46,4 +49,281 @@ p {
 
 a {
     text-decoration: none;
+}
+
+/* NAVIGATION MENU */
+.headerbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    height: 8vh;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    font-family: 'TextBold';
+}
+
+.menu-btn {
+    border-style: none;
+    font-family: 'TextBold';
+    background-color: rgba(0, 0, 0, 0);
+    color: #1c1c1c;
+    margin-right: 1vw;
+    font-size: 23px;
+    margin-top: 1vh;
+}
+
+.close-menu-btn {
+    border-style: none;
+    font-family: 'TextBold';
+    background-color: rgba(0, 0, 0, 0);
+    color: #1c1c1c;
+    margin-right: 1vw;
+    font-size: 25px;
+
+    display: none;
+    margin-top: 1vh;
+}
+
+.fa-bars {
+    cursor: pointer;
+    padding: 1.5vh;
+    /* text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.588); */
+    color: #eae5e5;
+}
+
+.fa-bars:hover {
+    background-color: #e0e0e03d;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa-xmark {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.fa-xmark:hover {
+    background-color: #5f9ea054; 
+    color: #5f9ea0;
+    border-color: #1c1c1100;
+    border-radius: 50%;
+}
+  
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(255, 255, 255);
+    color: rgb(28, 28, 28);
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+    z-index: 99;
+
+    transition: all 0.5s ease;
+}
+  
+.nav-menu ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+  
+.nav-menu ul li {
+    font-family: 'Heading';
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+  
+.nav-menu ul li a {
+    color: rgb(28, 28, 28);
+    text-decoration: none;
+    font-size: 4.5rem;
+    transition: color 0.3s;
+    transition: margin-left 0.3s;
+}
+  
+.nav-menu ul li a:hover {
+    color: cadetblue;
+    margin-left: 2rem;
+}
+
+
+/* MAIN PAGE BODY CONTENT */
+main {
+    background-color: rgb(255, 255, 255);
+    color: rgb(28, 28, 28);
+}
+
+h1 {
+    font-family: Heading;
+    margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 50px;
+}
+
+h2 {
+    margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 30px;
+    font-family: TextBold;
+}
+
+h3 {
+    margin-left: 5vw;
+    padding-top: 2vh;
+    font-size: 20px;
+    font-family: TextBold; 
+    margin-bottom: 2vh;
+    padding-bottom: 0px;
+}
+
+h4 {
+    margin-left: 5vw;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+.decisions p {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 18px;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.decisions {
+    width: 50vw;
+}
+
+.selection {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 18px;
+}
+
+.details {
+    display: none;
+}
+
+.select {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    background-color: #BC9116;
+    box-shadow: 0px 0px 5px #1c1c1c67;
+    border: none;
+    color: #eae5e5;
+    font-family: TextBold;
+    font-size: 18px;
+    padding: 1.5vh;
+    border-color: #BC9116;
+    border-style: solid;
+    border-width: 0.5vh;
+}
+
+.select:hover {
+    background-color: #fff;
+    color: #BC9116;
+}
+
+.deselect {
+    display: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #1c1c1c67;
+    border: none;
+    color: #BC9116;
+    font-family: TextBold;
+    font-size: 18px;
+    padding: 1.5vh;
+    border-color: #BC9116;
+    border-style: solid;
+    border-width: 0.5vh;
+}
+
+.skillselectspec {
+    cursor: pointer;
+    font-family: TextBold;
+
+    transition: 0.2s ease;
+}
+
+.skillselect:hover {
+    color: #BC9116;
+}
+
+.divider {
+    margin-right: 2vw;
+    margin-left: 6vw;
+    color: #f4f3f350;
+    margin-top: 5vh;
+}
+
+/* temp sheet display */
+
+.stats {
+    width: 40vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.stats td {
+    width: 6.66vw;
+}
+
+.stats th {
+    font-weight: normal;
+    background-color: #cdc9c9;
+}
+
+.abmodifier {
+    font-family: TextBold;
+    font-size: 30px;
+}
+
+.spacer {
+    height: 3vh;
+}
+
+table {
+    width: 40vw;
+}
+
+.bold {
+    font-family: TextBold;
+}
+
+.skilllist {
+    background-color: #5f9ea0;
+    font-size: 16px;
+
+    display: flex;
+    align-items: flex-start;
+    width: 6.6vw;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+li {
+    margin: 0%;
+    padding: 0%;
 }
