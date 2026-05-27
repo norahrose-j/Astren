@@ -49,11 +49,27 @@
                     creature within 5 feet of the first that is also within your reach. On a hit, the 
                     second creature takes the weapon's damage.
                 </p>
+                <div class = "selection">
+                    <button id="fightersel" class="select">SELECT</button>
+                    <button id="fighterdes" class="deselect">DESELECT</button>
+                </div>
+                <div class = 'details' id="fighterDetails">
+                    <p>
+                    You receive darkvision with 60ft. Your fey lineage grants you access to to the 
+                    Prestidigitation cantrip, and at 3rd and 5th levels you gain access to 
+                    Detect Magic and Misty Step, respectively.
+                    </p>
+                    <p>
+                        Choose one of: <span class = "skillselectspec insight">Insight</span>, 
+                        <span class = "skillselectspec perception">Perception</span> 
+                        or <span class = "skillselectspec survival">Survival</span>
+                    </p>
+                </div>  
             </div>
         </div>
 
         <div class = "sheet">
-            <h2 id="charname"></h2>
+            <h2 id="charname">Character Name</h2>
             <p>Level <span id="level"></span> <span id="species"></span> <span id="class"></span></p>
             <p id="backg"></p>
 
@@ -87,12 +103,12 @@
                 </tr>
 
                 <tr>
-                    <td class="saving">Saving Throw</td>
-                    <td class="saving">Saving Throw</td>
-                    <td class="saving">Saving Throw</td>
-                    <td class="saving">Saving Throw</td>
-                    <td class="saving">Saving Throw</td>
-                    <td class="saving">Saving Throw</td>
+                    <td class="saving">Save Throw</td>
+                    <td class="saving">Save Throw</td>
+                    <td class="saving">Save Throw</td>
+                    <td class="saving">Save Throw</td>
+                    <td class="saving">Save Throw</td>
+                    <td class="saving">Save Throw</td>
                 </tr>
 
                 <tr>
@@ -104,25 +120,41 @@
                     <td class="savscore" id="chasave"></td>
                 </td>
             </table>
-                <div>
-                        <div class = "skilllist">
-                        <ul>
-                        <li id="athletics">Athletics</li>
-                            <li>Arcana <span class = "bold" id="arcana"></span></li>
-                            <li>History <span class = "bold" id="history"></span></li>
-                            <li>Investigation <span class = "bold" id="investigation"></span></li>
-                            <li>Nature <span class = "bold" id="nature"></span></li>
-                            <li>Religion <span class = "bold" id="religion"></span></li>
-                            <li>Animal Handling <span class = "bold" id="animalhandling"></span></li>
-                            <li>Insight <span class = "bold" id="insight"></span></li>
-                            <li>Medicine <span class = "bold" id="medicine"></span></li>
-                            <li>Perception <span class = "bold" id="perception"></span></li>
-                            <li>Survival <span class = "bold" id="survival"></span></li>
-                            <li>Deception <span class = "bold" id="deception"></span></li>
-                            <li>Intimidation <span class = "bold" id="intimidation"></span></li>
-                            <li>Performance <span class = "bold" id="performance"></span></li>
-                            <li>Persuasion <span class = "bold" id="persuasion"></span></li>
-                        </ul>
+                <p class = 'header'>Skills</p>
+                <div  class = "skilllist">
+                        <div>
+                            <ul>   
+                                <li>Athletics <span class = "bold listscore" id="athletics"></span></li>
+                                <li>Acrobatics <span class = "bold listscore" id="acrobatics"></span></li>
+                                <li>Stealth <span class = "bold listscore" id="stealth"></span></li>
+                                <li>Sleight of Hand <span class = "bold listscore" id="sleightofhand"></span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Arcana <span class = "bold listscore" id="arcana"></span></li>
+                                <li>History <span class = "bold listscore" id="history"></span></li>
+                                <li>Investigation <span class = "bold listscore" id="investigation"></span></li>
+                                <li>Nature <span class = "bold listscore" id="nature"></span></li>
+                                <li>Religion <span class = "bold listscore" id="religion"></span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Animal Handling <span class = "bold listscore" id="animalhandling"></span></li>
+                                <li>Insight <span class = "bold listscore" id="insight"></span></li>
+                                <li>Medicine <span class = "bold listscore" id="medicine"></span></li>
+                                <li>Perception <span class = "bold listscore" id="perception"></span></li>
+                                <li>Survival <span class = "bold listscore" id="survival"></span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>Deception <span class = "bold listscore" id="deception"></span></li>
+                                <li>Intimidation <span class = "bold listscore" id="intimidation"></span></li>
+                                <li>Performance <span class = "bold listscore" id="performance"></span></li>
+                                <li>Persuasion <span class = "bold listscore" id="persuasion"></span></li>
+                            </ul>
                         </div>
                 </div>
         </div>

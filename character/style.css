@@ -304,17 +304,26 @@ table {
     width: 40vw;
 }
 
+.header {
+    font-family: TextBold;
+    margin-top: 3vh;
+    font-size: 22px;
+    margin-bottom: 1.5vh;
+}
+
+#charname {
+    margin-left: 0;
+}
+
 .bold {
     font-family: TextBold;
 }
 
 .skilllist {
-    background-color: #5f9ea0;
     font-size: 16px;
 
     display: flex;
-    align-items: flex-start;
-    width: 6.6vw;
+    justify-content: space-between;
 }
 
 ul {
@@ -326,4 +335,17 @@ ul {
 li {
     margin: 0%;
     padding: 0%;
+    margin-bottom: 0.5vh;
+}
+
+.saving {
+    padding-top: 2vh;
+}
+
+.savscore {
+    font-size: 18px;
+}
+
+.listscore {
+    font-size: 20px;
 }
