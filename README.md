@@ -5,6 +5,8 @@ Astren is a fictional worldbuilding website and interactive encyclopedia that ex
 ## Overview
 This repository contains a front-end-only worldbuilding site for the fictional realm of Astren. The website is organized as a set of static pages that present lore, regional information, and visual storytelling using plain HTML, CSS, and JavaScript.
 
+[Visit Astren](https://norahrose-j.github.io/Astren/)
+
 
 ## Project structure
 - `index.html` – landing page
